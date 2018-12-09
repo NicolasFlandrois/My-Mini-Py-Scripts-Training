@@ -24,6 +24,6 @@ while True:
 		#time express in seconds (20min = 1200sec)
 
 	print("Now your commits will be push to GitHub")
-	os.system("git push")
+	os.system("git push origin master")
 	time.sleep(10)
 	print("Your files, and commits has been uploaded and saved to your GitHub")
