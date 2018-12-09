@@ -18,16 +18,12 @@ PWD = input("Passphrase : ")
 os.system("clear")
 
 while True:
-	for i in range(3):
+	for i in range(4):
 		os.system ("git commit -a -m 'Auto Commit'")
-		time.sleep(3)
+		time.sleep(1200)
 		#time express in seconds (20min = 1200sec)
 
 	print("Now your commits will be push to GitHub")
 	os.system("git push")
 	time.sleep(10)
-	print(NAME)
-	time.sleep(10)
-	print(PWD)
-	time.sleep(30)
 	print("Your files, and commits has been uploaded and saved to your GitHub")
