@@ -13,12 +13,12 @@ import time
 print ("hello world")
 
 NAME = input("GitHub user name : ")
-PWD = input("Passphrase : )
+PWD = input("Passphrase : ")
 
 os.system("clear")
 
 while True:
-	for i range(4):
+	for i in range(3):
 		os.system ("git commit -a -m 'Auto Commit'")
 		time.sleep(3)
 		#time express in seconds (20min = 1200sec)
