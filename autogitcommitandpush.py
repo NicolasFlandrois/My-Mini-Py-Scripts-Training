@@ -22,6 +22,7 @@ while True:
 		os.system ("git commit -a -m 'Auto Commit'")
 		time.sleep(3)
 		#time express in seconds (20min = 1200sec)
+		#For testing this time.sleep is set to 3sec
 
 	print("Now your commits will be push to GitHub")
 	os.system("git push origin master")
