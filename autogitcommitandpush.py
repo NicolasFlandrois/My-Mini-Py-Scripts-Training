@@ -20,7 +20,7 @@ os.system("clear")
 while True:
 	for i in range(4):
 		os.system ("git commit -a -m 'Auto Commit'")
-		time.sleep(1200)
+		time.sleep(3)
 		#time express in seconds (20min = 1200sec)
 
 	print("Now your commits will be push to GitHub")
