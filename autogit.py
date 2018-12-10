@@ -20,7 +20,7 @@ os.system("clear")
 
 while True:
 	for i in range(4):
-		os.system ("git commit -a -m 'Auto Commit'")
+		os.system ("git add -A && git commit -a -m 'Auto Commit'")
 		time.sleep(3)
 		#time express in seconds (20min = 1200sec)
 		#For testing this time.sleep is set to 3sec
