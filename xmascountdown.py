@@ -36,6 +36,5 @@ while True:
 print()
 
 #Failed tests:
-#    print(delta + "\r", end="")
-#while delta > datetime.datetime(0, 0, 0, 0, 0, 0, 0):
+#I want the countdown to appear as: YYYY years MM months DD days HH:MM:SS; and remove at least the microseconds.
 
