@@ -2,6 +2,7 @@
 
 #Wed 19 Dec 2018 04:22:18 PM CET 
 #Author: Nicolas Flandrois
+#Description: The playuer have to guess a randomly defined whole number, between [1 and 100], within 7 guesses.
 
 import random
 import os
@@ -17,8 +18,10 @@ def clean():
 
 print("Welcome to 'Guess the Number' game!")
 time.sleep(1)
-print("You have to guess a randomly defined whole number, between 1 and 100, within 7 guesses.")
-time.sleep(3)
+print("""You have to guess a randomly defined whole number, 
+between 1 and 100, 
+within 7 guesses.""")
+time.sleep(5)
 
 clean()
 
@@ -27,8 +30,11 @@ win = 0
 def score():
     print('Your score is ' + str(win) + '/' + str(loop))
 
-def trial():
+def dubai():
     print('remaining ' + str(trials) + ' trials.')
+    time.sleep(3)
+    clean()
+#named it "dubai", because why not! came short of a code name for this function.
 
 while True:
     trials=int(7)
@@ -38,45 +44,42 @@ while True:
 
     for i in range(7):
         trials -= 1
-        y = int(input("Guess the number? "))
+
+        try:
+            y = int(input("Guess the number? "))
 
 #Verification if input number is valid
-#        except:
-#            print("Oops! ",sys.exc_info()[0]," occured. That was no valid number.  Try again...")
-#            pass
+        except:
+            print("Oops! ",sys.exc_info()[0]," occured. That was no valid number.  Try again...")
+            time.sleep(1)
+            dubai()
+            continue
 
         if y not in r:
-            print("Oops!  That was no valid number. Reminder choose a number between 1 and 100. Try again...")
-#        elif type(y)==float:                                                                        #cette condition est couvert par exception ErrorValue, car on a indiqué que int(y) 
-#            print("Oops!  That was no valid number. Reminder choose a whole number. Try again...")
-
+            print("""Oops!  That was no valid number. 
+REMINDER: choose a number between 1 and 100. 
+Try again...""")
+            dubai()
 #Test if player win or loose
-        if y > x:
+        elif y > x:
             print("You guessed too high!")
-            trial()
-            time.sleep(2)
-            clean()
+            dubai()
         elif y < x:
             print("You guessed too low!")
-            trial()
-            time.sleep(2)
-            clean()
+            dubai()
         elif y == x:
             print("You won!!!")
             win += 1
             time.sleep(1)
             score()
-            time.sleep(3)
-            clean()
+            time.sleep(2)
             break
 
-#If after 7 guesses player didn't guess correctly, let's inform him he lost!
+#If after 7 guesses player didn't guess correctly, let's inform him he lost! Or if he won and break the loop, let's continue.
     if y != x:
         print("You lost!")
         time.sleep(1)
         score()
-    else:
-        continue
 
 #Start a new game (continue infinite While True loop) or Quit loop?
     time.sleep(1)
@@ -87,9 +90,5 @@ while True:
         print("Good bye! Thank you for playing.")
         break
     
-    time.sleep(5)
+    time.sleep(1)
     clean()
-
-#Still to do:
-#verify if input is: a positive & whole number & within range [1;100]
-#use error value >> if ErrorValue: print("we said a number, WTF!") then continue or pass
