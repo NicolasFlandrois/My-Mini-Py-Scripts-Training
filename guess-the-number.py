@@ -23,11 +23,9 @@ clean()
 loop = 0
 win = 0
 
-while True: #how to make it work
-	loop += 1
-
+while True:
     x = random.randrange(1,101,2)
-
+    loop += 1
     trials=int(8)
     r=range(1,101)
 
@@ -58,12 +56,16 @@ while True: #how to make it work
             clean()
         else:
             print("You win!!!")
-	    win += 1
-	    time.sleep(3)
-	    print("your score is ", win,"/", loop)
+            win += 1
+            time.sleep(3)
+            print("your score is ", win,"/", loop)
             time.sleep(10)
+            clean()
             break
-    print("You loose!")
+
+    print("You loose!") #This line appeares even if made a win = issue
+    time.sleep(3)
+    print("your score is ", win,"/", loop)
     time.sleep(10)
     clean()
 
