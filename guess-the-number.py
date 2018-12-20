@@ -21,26 +21,47 @@ time.sleep(5)
 
 clean()
 
-#While True: #how to make it work
-x = random.randrange(1,101,2)
-#print(x) #Only for testing
-time.sleep(5)
-clean()
-	
-for i in range(7):
-#	print("remaining " i "guess.") #add a remaining guess counter here
-	y = int(input("Guess? "))
-	if y > x:
-		print("You guessed too high!")
-		time.sleep(5)
-		clean()
-	elif y < x:
-		print("You guessed too low!")
-		time.sleep(5)
-		clean()
-	else:
-		print("You win!!!")
-		break
+while True: #how to make it work
+
+    x = random.randrange(1,101,2)
+
+    trials=int(8)
+    r=range(1,101)
+
+    for i in range(7):
+        trials -= 1
+        print("remaining ", trials, " trials.")
+        y = int(input("Guess the number? "))
+
+#        if except ValueError:
+#            return ("Oops!  That was no valid number.  Try again...")
+#            pass
+#        elif:  
+#            y in r
+#                if False
+#                    return("Oops!  That was no valid number. Reminder choose a number between 1 and 100. Try again...")
+#                else:
+#                    continue
+#        finally:
+#            pass
+
+        if y > x:
+            print("You guessed too high!")
+            time.sleep(5)
+            clean()
+        elif y < x:
+            print("You guessed too low!")
+            time.sleep(5)
+            clean()
+        else:
+            print("You win!!!")
+            time.sleep(10)
+            break
+    print("You loose!")
+    time.sleep(10)
+    clean()
+
 #Still to do:
 #Offer a choice to start a new game or quit
 #verify if input is: Interger + a positive number + within range [1;100]
+#use error value >> if ErrorValue: print("we said a number, WTF!") then continue or pass
