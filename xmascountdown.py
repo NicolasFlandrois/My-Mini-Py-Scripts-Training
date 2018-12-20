@@ -30,11 +30,12 @@ clean()
 while True:
     td = datetime.datetime.now()
     delta = xd - td
-    print(delta)
+    print(delta.strftime('%Y years, %m months, %d days, %H:%M:%S'))
     time.sleep(1)
     clean()
 print()
 
 #Failed tests:
 #I want the countdown to appear as: YYYY years MM months DD days HH:MM:SS; and remove at least the microseconds.
+# print(delta.strftime('%Y years, %m months, %d days, %H:%M:%S'))  Doesn't work out
 
