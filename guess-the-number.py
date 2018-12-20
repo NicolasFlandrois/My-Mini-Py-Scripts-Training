@@ -15,23 +15,28 @@ def clean():
 		os.system("clear")
 
 print("Welcome to 'Guess the Number' game!")
-time.sleep(3)
+time.sleep(1)
 print("You have to guess an integer number, between 1 and 100, within 7 guess.")
-time.sleep(5)
+time.sleep(3)
 
 clean()
+
 loop = 0
 win = 0
+def score():
+    print('Your score is ' + str(win) + '/' + str(loop))
+
+def trial():
+    print('remaining ' + str(trials) + ' trials.')
 
 while True:
+    trials=int(7)
     x = random.randrange(1,101,2)
     loop += 1
-    trials=int(8)
     r=range(1,101)
 
     for i in range(7):
         trials -= 1
-        print("remaining ", trials, " trials.")
         y = int(input("Guess the number? "))
 
 #        if except ValueError:
@@ -48,25 +53,31 @@ while True:
 
         if y > x:
             print("You guessed too high!")
-            time.sleep(5)
+            trial()
+            time.sleep(3)
             clean()
         elif y < x:
             print("You guessed too low!")
-            time.sleep(5)
-            clean()
-        else:
-            print("You win!!!")
-            win += 1
+            trial()
             time.sleep(3)
-            print("your score is ", win,"/", loop)
-            time.sleep(10)
+            clean()
+        elif y == x:
+            print("You won!!!")
+            win += 1
+            time.sleep(1)
+            score()
+            time.sleep(5)
             clean()
             break
 
-    print("You loose!") #This line appeares even if made a win = issue
-    time.sleep(3)
-    print("your score is ", win,"/", loop)
-    time.sleep(10)
+    if y != x:
+        print("You lost!")
+        time.sleep(1)
+        score()
+    else:
+        continue
+    
+    time.sleep(5)
     clean()
 
 #Still to do:
