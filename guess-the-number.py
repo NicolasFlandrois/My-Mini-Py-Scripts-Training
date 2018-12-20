@@ -20,8 +20,11 @@ print("You have to guess an integer number, between 1 and 100, within 7 guess.")
 time.sleep(5)
 
 clean()
+loop = 0
+win = 0
 
 while True: #how to make it work
+	loop += 1
 
     x = random.randrange(1,101,2)
 
@@ -55,6 +58,9 @@ while True: #how to make it work
             clean()
         else:
             print("You win!!!")
+	    win += 1
+	    time.sleep(3)
+	    print("your score is ", win,"/", loop)
             time.sleep(10)
             break
     print("You loose!")
