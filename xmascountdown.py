@@ -21,7 +21,13 @@ try:
     Year = int(input("Xmas of which year? "))
 except:
     print("Oops! ",sys.exc_info()[0],""" occured. That was no valid number.  Try again...
-choose a year, in number, format YYYY.""")
+choose a year, in positive number, format YYYY.""")
+
+r = range(1, 9999)
+if Year not in r:
+    print("""Oops!  That was no valid number. 
+REMINDER: choose a positive year number between 1 and 9999. 
+Try again...""")
 
 xd = datetime.datetime(Year, 12, 25, 0, 0, 1)
 
