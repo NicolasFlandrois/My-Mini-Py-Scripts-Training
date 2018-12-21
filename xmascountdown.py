@@ -12,10 +12,10 @@ import platform
 import sys
 
 def clean():
-	if platform.system() == "Windows":
-		os.system("cls")
-	elif platform.system() == "Linux":
-		os.system("clear")
+    if platform.system() == "Windows":
+        os.system("cls")
+    elif platform.system() == "Linux":
+        os.system("clear")
 
 try:
     Year = int(input("Xmas of which year? "))
@@ -30,12 +30,13 @@ clean()
 while True:
     td = datetime.datetime.now()
     delta = xd - td
-    print(delta)
-    time.sleep(1)
-    clean()
-print()
+
+    print("text", xd.strftime("%A, %d %B %Y")
+
+#    print(delta)
+
+#    time.sleep(1)
+#    clean()
 
 #Failed tests:
-#I want the countdown to appear as: YYYY years MM months DD days HH:MM:SS; and remove at least the microseconds.
-
-
+#I want the countdown to appear as: YYYY years MM months DD days HH:MM:SS; and remove at least the microseconds
