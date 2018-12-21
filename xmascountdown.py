@@ -32,7 +32,11 @@ while True:
     delta = xd - td
 
     print("Countdown until christmas of: ", xd.strftime("%A, %d of %B %Y"))
-    print(delta)
+#    print(delta)
+    print(delta.days)
+#    print(delta.timedelta.hours)
+#    print(delta.minutes)
+#    print(delta.seconds)
 
     time.sleep(1)
     clean()
