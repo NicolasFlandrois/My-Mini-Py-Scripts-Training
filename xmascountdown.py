@@ -31,8 +31,7 @@ while True:
     td = datetime.datetime.now()
     delta = xd - td
 
-#    print("text", xd.strftime("%A, %d %B %Y")
-
+    print("Countdown until christmas of: ", xd.strftime("%A, %d of %B %Y"))
     print(delta)
 
     time.sleep(1)
