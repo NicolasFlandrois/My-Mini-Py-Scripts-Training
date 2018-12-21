@@ -23,7 +23,7 @@ except:
     print("Oops! ",sys.exc_info()[0],""" occured. That was no valid number.  Try again...
 choose a year, in number, format YYYY.""")
 
-xd = datetime.datetime(Year, 7, 25, 0, 0, 1)
+xd = datetime.datetime(Year, 12, 25, 0, 0, 1)
 
 clean()
 
@@ -37,6 +37,16 @@ while True:
     cd_m = int(abs(delta.seconds - (cd_h * 3600))/60)
     cd_s = int(abs(delta.seconds - ( cd_h*3600 + cd_m*60 )))
 
+    print("""
+#     #                                                                                          
+ #   #     #    #   ##    ####      ####   ####  #    # #    # ##### #####   ####  #    # #    # 
+  # #      ##  ##  #  #  #         #    # #    # #    # ##   #   #   #    # #    # #    # ##   # 
+   #       # ## # #    #  ####     #      #    # #    # # #  #   #   #    # #    # #    # # #  # 
+  # #      #    # ######      #    #      #    # #    # #  # #   #   #    # #    # # ## # #  # # 
+ #   #     #    # #    # #    #    #    # #    # #    # #   ##   #   #    # #    # ##  ## #   ## 
+#     #    #    # #    #  ####      ####   ####   ####  #    #   #   #####   ####  #    # #    # 
+""")
+    print("")
     print("Countdown until christmas of: ", xd.strftime("%A, %d of %B %Y"))
     print("")
     print("Total days left: ", delta.days)
@@ -47,3 +57,70 @@ while True:
 
     time.sleep(1)
     clean()
+    
+#######################################################################################################################################################
+#                                .:xxxxxxxx:.
+#                             .xxxxxxxxxxxxxxxx.
+#                            :xxxxxxxxxxxxxxxxxxx:.
+#                           .xxxxxxxxxxxxxxxxxxxxxxx:
+#                          :xxxxxxxxxxxxxxxxxxxxxxxxx:
+#                          xxxxxxxxxxxxxxxxxxxxxxxxxxX:
+#                          xxx:::xxxxxxxx::::xxxxxxxxx:
+#                         .xx:   ::xxxxx:     :xxxxxxxx
+#                         :xx  x.  xxxx:  xx.  xxxxxxxx
+#                         :xx xxx  xxxx: xxxx  :xxxxxxx
+#                         'xx 'xx  xxxx:. xx'  xxxxxxxx
+#                          xx ::::::xx:::::.   xxxxxxxx
+#                          xx:::::.::::.:::::::xxxxxxxx
+#                          :x'::::'::::':::::':xxxxxxxxx.
+#                          :xx.::::::::::::'   xxxxxxxxxx
+#                          :xx: '::::::::'     :xxxxxxxxxx.
+#                         .xx     '::::'        'xxxxxxxxxx.
+#                       .xxxx                     'xxxxxxxxx.
+#                     .xxxx                         'xxxxxxxxx.
+#                   .xxxxx:                          xxxxxxxxxx.
+#                  .xxxxx:'                          xxxxxxxxxxx.
+#                 .xxxxxx:::.           .       ..:::_xxxxxxxxxxx:.
+#                .xxxxxxx''      ':::''            ''::xxxxxxxxxxxx.
+#                xxxxxx            :                  '::xxxxxxxxxxxx
+#               :xxxx:'            :                    'xxxxxxxxxxxx:
+#              .xxxxx              :                     ::xxxxxxxxxxxx
+#              xxxx:'                                    ::xxxxxxxxxxxx
+#              xxxx               .                      ::xxxxxxxxxxxx.
+#          .:xxxxxx               :                      ::xxxxxxxxxxxx::
+#          xxxxxxxx               :                      ::xxxxxxxxxxxxx:
+#          xxxxxxxx               :                      ::xxxxxxxxxxxxx:
+#          ':xxxxxx               '                      ::xxxxxxxxxxxx:'
+#            .:. xx:.                                   .:xxxxxxxxxxxxx'
+#          ::::::.'xx:.            :                  .:: xxxxxxxxxxx':
+#  .:::::::::::::::.'xxxx.                            ::::'xxxxxxxx':::.
+#  ::::::::::::::::::.'xxxxx                          :::::.'.xx.'::::::.
+#  ::::::::::::::::::::.'xxxx:.                       :::::::.'':::::::::
+#  ':::::::::::::::::::::.'xx:'                     .'::::::::::::::::::::..
+#    :::::::::::::::::::::.'xx                    .:: :::::::::::::::::::::::
+#  .:::::::::::::::::::::::. xx               .::xxxx :::::::::::::::::::::::
+#  :::::::::::::::::::::::::.'xxx..        .::xxxxxxx ::::::::::::::::::::'
+#  '::::::::::::::::::::::::: xxxxxxxxxxxxxxxxxxxxxxx :::::::::::::::::'
+#    '::::::::::::::::::::::: xxxxxxxxxxxxxxxxxxxxxxx :::::::::::::::'
+#        ':::::::::::::::::::_xxxxxx::'''::xxxxxxxxxx '::::::::::::'
+#             '':.::::::::::'                        `._'::::::''
+#
+#                                   ,wmmmmmmmp                                   
+#                                   KP ]bbKKKKK                                  
+#                                   KKKKKKKKKKK                                  
+#                              a#KKKKKKKKKKKKKK PPhw                             
+#                             #bbbbbbbbbbbKKKKK ||||h                            
+#                             bbbbbbKMMMMMMMM*,$|||||                            
+#                             bbbbbM,$|LLLL||||||||||                            
+#                             Tbbbb LLLLL|||||||||||L                            
+#                              `fff LLLLL*"""""""""`                             
+#                                   LLLLL||P"!|                                  
+#                                   *|LLL||hw|*                                  
+#                                      `````                                     
+#                                    y  jM                                       
+#                       .m**m  m  :p #M jN~~m  m**w .m**m                        
+#                       :N  jm:N  jM ]  jC  ] ]L  ]MjC  ]                        
+#                       :N,,#^ N,,/M 1p jC  ] `N,,A jC  $                        
+#                       :N        ]L                                             
+#                        '      `"                                               
+#######################################################################################################################################################
