@@ -10,3 +10,5 @@ Tiny project 2: Guess-the-number.py
 Small exercice, create a small guessing game: guess the randomly generated number within range [1;100], within 7 or 8 guess.
 
 Tiny project 3: Create a Christmas count down, in Python. xmascountdown.py
+
+Tool project A: verif_integer.py = create a fonction to verify if input number is integer and within range.
