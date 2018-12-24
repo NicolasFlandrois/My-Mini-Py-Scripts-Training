@@ -18,8 +18,13 @@ def ask_integer(message:str, range, error_message:str = ""):
             if nb in range:
                 return nb
                 raise
+                
+        except KeyboardInterrupt:
+            break
+            
         except:
             print(error_message)
+
 
 #to do inclued a value to exit the loop, optional, make it as default -1 (cannot be a string or float, as exception will be raised)
 
