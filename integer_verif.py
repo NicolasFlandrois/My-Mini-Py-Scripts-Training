@@ -1,3 +1,7 @@
+#! usr/bin/python3
+# Tue 25 Dec 2018 12:19:39 AM CET 
+# Author: Nicolas Flandrois
+
 def ask_integer(message:str, range, error_message:str = ""):
     """
     Le but de cette fonction
