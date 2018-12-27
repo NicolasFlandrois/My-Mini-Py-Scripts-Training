@@ -31,5 +31,5 @@ def ask_integer(message:str, range, error_message:str = ""):
 print ("test lines")
 
 ask_integer("Please choose a number (range test):", range(1, 100), "Error")
-ask_integer("Please choose a number (list test):", (101, 110, 120, 130, 140, 150, 160), "Error")
-ask_integer("Please choose a number (Tuples test):", [200, 300, 400, 500, 600], "Error")
+ask_integer("Please choose a number (Tuple test):", (101, 110, 120, 130, 140, 150, 160), "Error")
+ask_integer("Please choose a number (List test):", [200, 300, 400, 500, 600], "Error")

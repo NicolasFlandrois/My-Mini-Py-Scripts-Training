@@ -3,6 +3,14 @@ Mini python Scripts
 
 In this repository I'll stack tiny scripts, that has no bigger projects. It will mainly be automation of command lines and small programs.
 
+#################################################################################################################
+TOOLS:
+
+Tool project A: ask_integer.py = create a fonction to verify if input number is integer and within range.
+
+#################################################################################################################
+TINY PROJECTS:
+
 Tiny project 1: autogitcommitandpush.py
 This tiny project aim to automatically run bash scripts, from a python program, to commit in git every 20 min (1200sec), and after a loop of 4 cycles, push to remote GitHub repository.
 
@@ -11,4 +19,4 @@ Small exercice, create a small guessing game: guess the randomly generated numbe
 
 Tiny project 3: Create a Christmas count down, in Python. xmascountdown.py
 
-Tool project A: verif_integer.py = create a fonction to verify if input number is integer and within range.
+Tiny Project 4: Folder drink_dispenser. Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks.
