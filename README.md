@@ -20,3 +20,8 @@ Small exercice, create a small guessing game: guess the randomly generated numbe
 Tiny project 3: Create a Christmas count down, in Python. xmascountdown.py
 
 Tiny Project 4: Folder drink_dispenser. Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks.
+
+#################################################################################################################
+EXERCICES OCR:
+
+SAN ANTONIO: Suivi d'exercices de cours Démarrez votre projet en Python. Mini programme donnant des citations de San Antonio
