@@ -62,7 +62,7 @@ def leapyr(year):
 	This function defines if the year is 
 	a Leap year (366 days) 
 	or a Normal year (365 days).
-	Then it will to the variable n the value of 366 or 365, accordingly.
+	Then it will apply to variable n the value of 366 or 365, accordingly.
 	"""
 	global n
 	if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
