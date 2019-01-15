@@ -25,19 +25,27 @@
 #
 #################################################################################
 
-#Thu 10 Jan 2019 12:42:24 PM CET - Stradate 96627.31 (STO)
+#! usr/bin/env python3
+#Tue 15 Jan 2019 01:38:39 PM CET 
 #Author: Nicolas Flandrois
-#Description: This program intend to compute Stardate, 
-#according to current time defined by the computer, 
+#Description: This program intend to convert Earthdate into Stardate, 
+#according to time input by user, 
 #it is using customized reference points for calculation:
 # stardate = c + [1000*(y-b)] + [(1000/(n*1440))*((iso_day_of_year - 1)+time_in_minutes)]
-# Comment: This isn't the prettiest way to compute all that, nor python zen. But it works
-#Version: v1.2 (Cleaned up version and PEP 8)
 
 import datetime
 
+year = int(input("Earth Year? (YYYY format)"))
+month = int(input("Earth Month? (from 01 to 12)"))
+day = int(input("Day of the month? (from 01 to 31)"))
+hour = int(input("Hour? (format 24h)"))
+minute = int(input("Minutes? "))
+
+edstring = "".join(list(year, month, day, hour, minute))
+print(edstring)
+
 d = datetime.datetime.now()
-t = d.timetuple()
+earthdate = d.timetuple()
 
 ed_display = d.strftime('%A, %Y %B %d. %H:%M:%S')
 print('Earthdate : ', ed_display)
@@ -73,20 +81,21 @@ def leapyr(year):
 		n = 365
 		print("The year is a normal year.")
 
-leapyr(t.tm_year)
+leapyr(earthdate.tm_year)
 
-def stardate(b, c, t, n=365):
-	""" 
-	Stardate calculator
-	b = Earthdate Year reference point
-	c = Stardate Yaer reference point, corresponding to b
-	t = Time
-	n = year number of days leap/normal
-	"""
-	sdy = (c+(1000*(t.tm_year-b)))
-	sdt = ((1000/(n*1440.0))*(((t.tm_yday-1.0)*1440.0)+(t.tm_hour*60.0)+t.tm_min))
-	sd = sdy+sdt
-	print("Stardate : ", format(sd, '.2f'))
+#Here we convert the current Year into a Stardate.
+sd_yeardelta = earthdate.tm_year-b
+sd_yearunit = 1000*sd_yeardelta
+sd_year = c+sd_yearunit
 
+#Here we convert the current iso-day_of_year 
+#and time (hh:mm), into Stardate
+ed_min = ((earthdate.tm_yday-1.0)*1440.0)+(earthdate.tm_hour*60.0)+earthdate.tm_min
+sd_timeunit = 1000/(n*1440.00)
+sd_min = sd_timeunit*ed_min
+
+#Here we add up the Year Stardate, and Time Stardate, 
+#to get a full STARDATE
+stardate = sd_year+sd_min
 print("")
-stardate(b, c, t, n)
+print("Stardate : ", format(stardate, '.2f'))
