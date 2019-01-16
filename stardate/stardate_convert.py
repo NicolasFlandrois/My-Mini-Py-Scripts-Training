@@ -25,7 +25,6 @@
 #
 #################################################################################
 
-#! usr/bin/env python3
 #Tue 15 Jan 2019 01:38:39 PM CET 
 #Author: Nicolas Flandrois
 #Description: This program intend to convert Earthdate into Stardate, 
