@@ -39,8 +39,19 @@ import datetime
 
 t = float(input("What Stardate do you wish to convert? : "))
 
+#The following reference points are from 
+#the MMORPG Star Trek Online (STO). 
+#This STO referncial was determined from their online converter:
+# 2019/01/01 00:00 = 96601.20 stardate units
+#https://www.stoacdemy.com/tools/stardate.php
+#STO online converter uses differnt round parameters, 
+#and I discovered they don't take leap year into account. 
+#They apply n = 365, even during a leap year of 366 days.
 b = 2019
 c = 96601.20
+#Reference point variables can be customized. 
+#Please refer to the reference dates document.
+
 n = 1
 
 print("")
