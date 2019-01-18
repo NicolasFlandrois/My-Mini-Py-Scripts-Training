@@ -28,12 +28,40 @@ Author: Nicolas Flandrois
 
 Script description:
 
-	This program intend to compute Stardate, according to current time defined by the user computer, it is using customized reference points for calculation, according to STO Stardate generator.
+> stardate_sto.py - v1.2
+	This script intend to compute Stardate, according to current time defined by the user computer. It is using customized reference points for calculation, according to STO Stardate generator.
 	For the moment, if the user wants to set up customized reference points, he/she needs to modify (b, c) variables directly in the script.
-	This script is using python3. Launch the script in Python 3. It will print (display) 3 outputs in your consol:
+	This script is using python 3. Launch the script in Python 3. It will print (display) 3 outputs in your consol:
 		- Current date and time, Earthdate (defined by user computer).
 		- Whether the current year is a Leap Year or a Normal Year.
 		- Current Stardate
+
+> stardate_convert.py - v1.0
+	This script intend to convert an Earthdate into a Stardate. It is using customized reference points for calculation, according to STO Stardate generator.
+	For the moment, if the user wants to set up customized reference points, he/she needs to modify (b, c) variables directly in the script.
+	This script is using python 3. Launch the script in Python 3. 
+	It will ask the user for inputs, related to the date we want to translate:
+		- Year
+		- Month (Number of)
+		- Day of the month
+		- Hour
+		- Minutes
+	It will print (display) 3 outputs in your consol:
+		- Earthdate (the date the user inputed, as a reminder).
+		- Whether the current year is a Leap Year or a Normal Year.
+		- Corresponding Stardate.
+
+> stardate_translate.py - v1.0
+	This script intend to translate a Stardate into an Earthdate. It is using customized reference points for calculation, according to STO Stardate generator.
+	For the moment, if the user wants to set up customized reference points, he/she needs to modify (b, c) variables directly in the script.
+	This script is using python 3. Launch the script in Python 3. 
+	Note: Due to the nature of a Stardate and approximation (rounding at 2 decimals), the translation of the stardate has a leap error of 2 minutes.
+	It will ask the user to inputs the stardate we want to translate:
+		- Stardate
+	It will print (display) 3 outputs in your consol:
+		- Stardate (the date the user inputed, as a reminder).
+		- Whether the current year is a Leap Year or a Normal Year.
+		- Corresponding Earthdate.
 
 ######################################################################################################################################################
 >>> taH pagh taHbe <<<>>> To continue or to not continue <<<

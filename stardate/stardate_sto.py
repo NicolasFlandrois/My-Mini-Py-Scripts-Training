@@ -1,4 +1,4 @@
-#! usr/bin/python3
+#!usr/bin/python3
 
 #################################################################################
 # MIT License
@@ -30,8 +30,10 @@
 #Description: This program intend to compute Stardate, 
 #according to current time defined by the computer, 
 #it is using customized reference points for calculation:
-# stardate = c + [1000*(y-b)] + [(1000/(n*1440))*((iso_day_of_year - 1)+time_in_minutes)]
-# Comment: This isn't the prettiest way to compute all that, nor python zen. But it works
+# stardate = c + [1000*(y-b)] + 
+#            [(1000/(n*1440))*((iso_day_of_year - 1)+time_in_minutes)]
+# Comment: This isn't the prettiest way to compute all that, nor python zen. 
+#But it works
 #Version: v1.2 (Cleaned up version and PEP 8)
 
 import datetime
@@ -52,12 +54,12 @@ print('Earthdate : ', ed_display)
 #They apply n = 365, even during a leap year of 366 days.
 b = 2019
 c = 96601.20
-#Referents point variables can be customized. 
+#Reference point variables can be customized. 
 #Please refer to the reference dates document.
 
 n = 1
 
-def leapyr(year):
+def leapyr(year:int):
 	"""" 
 	This function defines if the year is 
 	a Leap year (366 days) 
@@ -75,17 +77,19 @@ def leapyr(year):
 
 leapyr(t.tm_year)
 
-def stardate(b, c, t, n=365):
+def stardate(b:int, c:float, t, n=365):
 	""" 
 	Stardate calculator
 	b = Earthdate Year reference point
 	c = Stardate Yaer reference point, corresponding to b
-	t = Time
-	n = year number of days leap/normal
+	t = Time  (cf 'datetime.datetime.now().timetuple()' format)
+	n = number of days leap/normal year 
 	"""
-	sdy = (c+(1000*(t.tm_year-b)))
-	sdt = ((1000/(n*1440.0))*(((t.tm_yday-1.0)*1440.0)+(t.tm_hour*60.0)+t.tm_min))
-	sd = sdy+sdt
+	
+	sd = ((c+(1000*(t.tm_year-b)))+
+		((1000/(n*1440.0))*(((t.tm_yday-1.0)*1440.0)+
+			(t.tm_hour*60.0)+t.tm_min)))
+
 	print("Stardate : ", format(sd, '.2f'))
 
 print("")

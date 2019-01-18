@@ -1,4 +1,4 @@
-#! usr/bin/python3
+#!usr/bin/python3
 
 #################################################################################
 # MIT License
@@ -25,26 +25,51 @@
 #
 #################################################################################
 
-#Tue 15 Jan 2019 01:38:39 PM CET 
+#Thu 17 Jan 2019 04:25:27 PM CET  - Stardate: 96649.65
 #Author: Nicolas Flandrois
-#Description: This program intend to convert Earthdate into Stardate, 
-#according to time input by user, 
+#Description: This program intend to convert a given Earthdate into Stardate,
 #it is using customized reference points for calculation:
-# stardate = c + [1000*(y-b)] + [(1000/(n*1440))*((iso_day_of_year - 1)+time_in_minutes)]
+# stardate = c + [1000*(y-b)] + 
+#            [(1000/(n*1440))*((iso_day_of_year - 1)+time_in_minutes)]
+#Version: 1.0
 
 import datetime
 
-year = int(input("Earth Year? (YYYY format)"))
-month = int(input("Earth Month? (from 01 to 12)"))
-day = int(input("Day of the month? (from 01 to 31)"))
-hour = int(input("Hour? (format 24h)"))
-minute = int(input("Minutes? "))
+def ask_integer(message:str, range, error_message:str = ""):
+    """
+    Le but de cette fonction
+    est de demander un entier à l'utilisateur
+    avec un message personnalisé
+    Répéter l'opération si l'entrée n'est pas un entier
+    avec un message d'erreur personnalisé
+    L'entier sera vérifié par la fonction passée en paramètres
+    """
+    var = None
+    while True:
+        try:
+            var = int(input(message))
+            if var in range:
+                return var
+                raise
+                
+        except KeyboardInterrupt:
+            break
+            
+        except:
+            print(error_message)
 
-edstring = "".join(list(year, month, day, hour, minute))
-print(edstring)
+dlist = []
+dlist.append(ask_integer("Earth Year? (YYYY format) ", range(-10000000, 10000000)))
+dlist.append(ask_integer("Earth Month? (from 01 to 12) ", range(1, 13)))
+dlist.append(ask_integer("Day of the month? (from 01 to 31) ", range(1, 32)))
+dlist.append(ask_integer("Hour? (from 00 to 23) ", range(0, 24)))
+dlist.append(ask_integer("Minutes? (from 00 to 59) ", range(0, 60)))
 
-d = datetime.datetime.now()
-earthdate = d.timetuple()
+dstring = " ".join([str(i) for i in dlist])
+
+d = datetime.datetime.strptime(dstring, '%Y %m %d %H %M')
+
+t = d.timetuple()
 
 ed_display = d.strftime('%A, %Y %B %d. %H:%M:%S')
 print('Earthdate : ', ed_display)
@@ -64,7 +89,7 @@ c = 96601.20
 
 n = 1
 
-def leapyr(year):
+def leapyr(year:int):
 	"""" 
 	This function defines if the year is 
 	a Leap year (366 days) 
@@ -80,21 +105,22 @@ def leapyr(year):
 		n = 365
 		print("The year is a normal year.")
 
-leapyr(earthdate.tm_year)
+leapyr(t.tm_year)
 
-#Here we convert the current Year into a Stardate.
-sd_yeardelta = earthdate.tm_year-b
-sd_yearunit = 1000*sd_yeardelta
-sd_year = c+sd_yearunit
+def stardate(b:int, c:float, t, n=365):
+	""" 
+	Stardate calculator
+	b = Earthdate Year reference point
+	c = Stardate Yaer reference point, corresponding to b
+	t = Time  (cf 'datetime.datetime.now().timetuple()' format)
+	n = number of days leap/normal year 
+	"""
+	
+	sd = ((c+(1000*(t.tm_year-b)))+
+		((1000/(n*1440.0))*(((t.tm_yday-1.0)*1440.0)+
+			(t.tm_hour*60.0)+t.tm_min)))
 
-#Here we convert the current iso-day_of_year 
-#and time (hh:mm), into Stardate
-ed_min = ((earthdate.tm_yday-1.0)*1440.0)+(earthdate.tm_hour*60.0)+earthdate.tm_min
-sd_timeunit = 1000/(n*1440.00)
-sd_min = sd_timeunit*ed_min
+	print("Stardate : ", format(sd, '.2f'))
 
-#Here we add up the Year Stardate, and Time Stardate, 
-#to get a full STARDATE
-stardate = sd_year+sd_min
 print("")
-print("Stardate : ", format(stardate, '.2f'))
+stardate(b, c, t, n)

@@ -1,16 +1,50 @@
-#! usr/bin/python3
+#!usr/bin/python3
 #Convert Stardate into Earthdate.
 
+#################################################################################
+# MIT License
+#
+# Copyright (c) 2019 - Nicolas Flandrois
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+#################################################################################
+
+#Date: Fri 18 Jan 2019 03:51:33 PM CET - Stardate: 96649.58
+#Author: Nicolas Flandrois
 #Description: This program intend to convert a given Stardate, 
 #into an Earthdate, using customized reference points for calculation:
-# stardate = c + [1000*(y-b)] + [(1000/(n*1440))*((iso_day_of_year - 1)+time_in_minutes)]
+# stardate = c + [1000*(y-b)] + 
+#            [(1000/(n*1440))*((iso_day_of_year - 1)+time_in_minutes)]
+#To date, this script has a 2 min leap error from translation.
+#Version: 1.0
+
 import datetime
 
-stardate = float(input("Stardate : "))
+t = float(input("What Stardate do you wish to convert? : "))
 
 b = 2019
 c = 96601.20
 n = 1
+
+print("")
+print("Stardate: ", t)
 
 def leapyr(year):
 	"""" 
@@ -28,9 +62,19 @@ def leapyr(year):
 		n = 365
 		print("The year is a normal year.")
 
-ed_year = int(((stardate//1000) - (c//1000)) + b)
-print("Year : ", ed_year)
+dlist = []
+ed_year = int(((t-c)//1000) + b)
+dlist.append(int(ed_year))
 leapyr(ed_year)
-
-ed_time = ((stardate%1000)*n)/1000
-print(ed_time)
+ed_time = (((t-c)%1000)/(1000/(1440*n)))
+ed_day = (ed_time//1440)+1
+dlist.append(int(ed_day))
+ed_hour = (ed_time-((ed_day-1)*1440))//60
+dlist.append(int(ed_hour))
+ed_min = ed_time%60
+dlist.append(int(ed_min))
+#NOTE: This calculation has 2 min leap from real date
+dstring = " ".join([str(i) for i in dlist])
+d = datetime.datetime.strptime(dstring, '%Y %j %H %M')
+d_display = d.strftime('%A, %Y %B %d. %H:%M:%S')
+print('Earthdate : ', d_display)
