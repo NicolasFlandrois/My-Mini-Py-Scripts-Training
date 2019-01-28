@@ -1,0 +1,32 @@
+Comment créer un générateur de date Maya Long Count?
+Le calendrier Maya fonctionne sur un système numérique de base 20.
+
+https://en.wikipedia.org/wiki/Mesoamerican_Long_Count_calendar >>> NB: Here an algorythm to calculate the date.
+
+Long Count    |  Long Count    |  Days    		|  Approximate 
+unit          |  period        |             	|  Solar Years
+1 K'in                      	 	1	 
+1 Winal	         20 K'in        	20	 
+1 Tun			 18 Winal			360					1
+1 K'atun		 20 Tun				7,200				20
+1 B'ak'tun	   	 20 K'atun			144,000				394
+1 Piktun		 20 B'ak'tun		2,880,000			7,885
+1 Kalabtun		 20 Piktun			57,600,000			157,704
+1 K'inchiltun	 20 Kalabtun		1,152,000,000		3,154,071
+1 Alautun		 20 K'inchiltun		23,040,000,000		63,081,429
+
+So the long count isn't entirely in base 20.
+There is 18 month/Winal of 20 days/K'in each, in a Year/Tun. Then we count in base 20 from there.
+There is 2 referencials as base points for long count 0.0.0.0.0.0.0, and they set 2 days appart... Selon les calcules officiels des chercheurs en la matière.
+ > ref1: Mayan Year 0, C = 584283
+ > ref2: Mayan Year 0, C = 584285
+That changes the way we count, or compute the date.
+
+>How to convert a date into a number of days from those reference points?
+>How to convert a number in base 10, into a number in base x (here we need bases 18 and 20).
+>How to convert bases into this format: base20 - BASE18 - b20 - b20 - b20 - b20 - b20 - b20? The passage from 20 to 18 to 20?
+>Would it be better to display it in a String? a List? a Tuple? a Dictionary? > I tend to go for Dictionary, with long count's units as keys.
+>How to display the results? Do we just print the dictionary? or create a string?
+>How to take into account all leap years that went through history?
+
+OBJECTIF: Générate a Mayan Long Count Date from a Gregorian Date (Normal ISO-8601 Calendar)

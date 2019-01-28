@@ -21,7 +21,18 @@ Tiny project 3: Create a Christmas count down, in Python. xmascountdown.py
 
 Tiny Project 4: Folder drink_dispenser. Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks.
 
-Tiny Project 5: Stardate.py, Generate (star trek) Stardate according to current time. Diversification: Convert an hearth date into Stardate, and convert back Stardate into Hearth date. Including time hh:mm:ss into stardate calculartion. Changing reference date.
+Tiny Project 5: Stardate Project: 
+	Generate (star trek) Stardate according to current time. Changing reference date.
+	Convert a date for input gregorian date (ISO-8601), to a stardate.
+	Translate a stardate input to a Gregorian date (ISO-8601).
+
+Tiny Project 6: fibonacci.py, generator and intention/comprehension list to create a fibonacci sequence, for n iterations.
+
+Tiny project 7: Mayan Calendar Project:
+	Generate of Mayan Long Count Calendar according to current time. Changing reference date.
+	Convert an input date (from gregorian ISO-8601 calendar) to Long Count.
+	Translate a Long Count Input, into a Gregorian date (ISO-8601 calendar).
+	Same 2 generator, convertor, translator, for Tzolkin and Ha'ab Mayan Calendar. Which is more difficult, as they are cycles, and don't refer to a year.
 
 #################################################################################################################
 EXERCICES OCR:
