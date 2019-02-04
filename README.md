@@ -33,6 +33,10 @@ Tiny project 7: Mayan Calendar Project:
 	Convert an input date (from gregorian ISO-8601 calendar) to Long Count.
 	Translate a Long Count Input, into a Gregorian date (ISO-8601 calendar).
 	Same 2 generator, convertor, translator, for Tzolkin and Ha'ab Mayan Calendar. Which is more difficult, as they are cycles, and don't refer to a year.
+	
+Tiny project 8: Deck of cards (exercice):
+	Generate a deck of cards, and deal hands to players.
+	Using Object Oriented Programming, with python Classes system
 
 #################################################################################################################
 EXERCICES OCR:

@@ -30,6 +30,7 @@ Those 2 ref points corresponds to GMT correlation to the total number of days.
 		>Would it be better to display it in a String? a List? a Tuple? a Dictionary? > I tend to go for Dictionary, with long count's units as keys.
 		>How to display the results? Do we just print the dictionary? or create a string?
 		>How to take into account all leap years that went through history?
+		>How to develop all that in Object Oriented Programming? (and, would it be relevent?)
 
 OBJECTIF: Générate a Mayan Long Count Date from a Gregorian Date (Normal ISO-8601 Calendar)
 
@@ -79,6 +80,7 @@ Few leads/ideas:
 		etc..., all the way to Alautun
 -----------------------------------------------
 https://en.wikipedia.org/wiki/Mesoamerican_Long_Count_calendar
+
 The Mesoamerican Long Count calendar is a non-repeating, vigesimal (base-20) and base-18 calendar used by several pre-Columbian Mesoamerican cultures, most notably the Maya. For this reason, it is often known as the Maya (or Mayan) Long Count calendar. Using a modified vigesimal tally, the Long Count calendar identifies a day by counting the number of days passed since a mythical creation date that corresponds to August 11, 3114 BCE in the Proleptic Gregorian calendar.[n 1] The Long Count calendar was widely used on monuments.
 
 [...]
