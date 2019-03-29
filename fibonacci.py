@@ -9,7 +9,8 @@ def fib(n:int):
 		yield a
 		a, b = b, a+b
 		
-fibonacci = [f for f in fib(200)]
+n = int(input("To what number of recurence do you want your fibonacci list? "))
+fibonacci = [f for f in fib(n)]
 #Comprehension list applying the fibonacci generator, and holding the result in a list, sequences.
 
 print(fibonacci)
