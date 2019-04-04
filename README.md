@@ -42,6 +42,10 @@ Tiny project 8: Deck of cards (exercice):
 Tiny project 9: Passphrase generator [pw.py]:
 	From a given text (or collection of books and dictionnaries, the more the merryer), the script will create a list of words choosen entirely randomly. 
 	[Work in progress]
+
+Tiny project 10: Name Data Base Generator (python + SQL):
+	The python generator will create random name association from lists of male names, female names and Family names, to generate a sql data base. Further more this kind of data base generator, can generate massive amount of data (names pairs). Such data base can be use to test software and scripts needing data. Such generator can be used for other objects than names.
+	[Ice box - Waiting to work on it]
 	
 #################################################################################################################
 EXERCICES OCR:
