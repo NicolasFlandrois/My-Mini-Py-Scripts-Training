@@ -46,6 +46,10 @@ Tiny project 9: Passphrase generator [pw.py]:
 Tiny project 10: Name Data Base Generator (python + SQL):
 	The python generator will create random name association from lists of male names, female names and Family names, to generate a sql data base. Further more this kind of data base generator, can generate massive amount of data (names pairs). Such data base can be use to test software and scripts needing data. Such generator can be used for other objects than names.
 	[Ice box - Waiting to work on it]
+
+Tiny project 11: Pychain
+	Create in python a simple blockchain (as an exercise). -details and what will it be used for, to be determined-
+	[Ice box - Waiting to work on it]
 	
 #################################################################################################################
 EXERCICES OCR:
