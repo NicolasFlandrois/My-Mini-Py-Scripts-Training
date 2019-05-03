@@ -26,6 +26,7 @@ Tiny Project 5: Stardate Project:
 	Generate (star trek) Stardate according to current time. Changing reference date.
 	Convert a date for input gregorian date (ISO-8601), to a stardate.
 	Translate a stardate input to a Gregorian date (ISO-8601).
+	This project has now an independant GitHub Repository (https://github.com/NicolasFlandrois/stardate.git), and is no longer followed in this My-Mini-Python-Script Repo.
 
 Tiny Project 6: fibonacci.py, generator and intention/comprehension list to create a fibonacci sequence, for n iterations.
 
@@ -34,7 +35,7 @@ Tiny project 7: Mayan Calendar Project :
 	Convert an input date (from gregorian ISO-8601 calendar) to Long Count.
 	Translate a Long Count Input, into a Gregorian date (ISO-8601 calendar).
 	Same 2 generator, convertor, translator, for Tzolkin and Ha'ab Mayan Calendar. Which is more difficult, as they are cycles, and don't refer to a year.
-	[Work in progress]
+	This project has now an independant GitHub Repository (https://github.com/NicolasFlandrois/maya_date.git), and is no longer followed in this My-Mini-Python-Script Repo.
 	
 Tiny project 8: Deck of cards (exercice):
 	Generate a deck of cards, and deal hands to players.
