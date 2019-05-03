@@ -19,7 +19,8 @@ Small exercice, create a small guessing game: guess the randomly generated numbe
 
 Tiny project 3: Create a Christmas count down, in Python. xmascountdown.py
 
-Tiny Project 4: Folder drink_dispenser. Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks. [Work in progress]
+Tiny Project 4: Folder drink_dispenser. Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks. 
+	[Work in progress]
 
 Tiny Project 5: Stardate Project: 
 	Generate (star trek) Stardate according to current time. Changing reference date.
@@ -50,6 +51,9 @@ Tiny project 10: Name Data Base Generator (python + SQL):
 Tiny project 11: Pychain
 	Create in python a simple blockchain (as an exercise). -details and what will it be used for, to be determined-
 	[Ice box - Waiting to work on it]
+
+Tiny project 12: rename.py
+	Create in python an automating renaming multiple files script in a given directory.
 	
 #################################################################################################################
 EXERCICES OCR:
