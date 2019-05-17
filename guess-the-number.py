@@ -1,4 +1,4 @@
-#! usr/bin/python3
+#!/usr/bin/python3
 
 #Wed 19 Dec 2018 04:22:18 PM CET 
 #Author: Nicolas Flandrois
