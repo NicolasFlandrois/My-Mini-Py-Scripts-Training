@@ -53,7 +53,7 @@ Tiny project 10: Name Data Base Generator (python + SQL):
 	                First name (randomly paired with family name)
 	                Gender (M/F depending on first name randomly assigned)
 	                Birth date (Random)
-	                Socialsecurity number (According to gender + Year of birth + Month of birth + Randomly assigned department number in range or within a list + 8 random numbers)
+	                Socialsecurity number (According to gender + Year of birth + Month of birth + Randomly assigned department number in range or within a list + 8 random numbers) cf: https://fr.wikipedia.org/wiki/Num%C3%A9ro_de_s%C3%A9curit%C3%A9_sociale_en_France#ancrage_C
 	[Ice box - Waiting to work on it]
 
 Tiny project 11: Pychain
