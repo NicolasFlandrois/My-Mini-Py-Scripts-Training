@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-#Date : Thu 06 Jun 2019 21:24:59 PM CET 
+#Date : Thu 06 Jun 2019 21:35:17 CEST 
 #Author: Nicolas Flandrois
-#Description:This short script will compute the Tribonacci sequence.
+#Description: This short script will compute the Tribonacci sequence.
 #The Tribonacci sequence is a variante of Fibonacci, where a number n in the 
 #sequence is equal to the sum of the 3 previous n number in the sequence.
 # n  = (n-3) + (n-2) + (n-1)
@@ -15,7 +15,7 @@ def trib(n:int):
 		yield a
 		a, b, c = b, c, a+b+c
 		
-n = int(input("To what number of recurence do you want your fibonacci list? "))
+n = int(input("To what number of recurence do you want your Tribonacci list? "))
 tribonacci = [f for f in trib(n)]
 #Comprehension list applying the tribonacci generator, and holding the result in 
 #a list, sequences.
