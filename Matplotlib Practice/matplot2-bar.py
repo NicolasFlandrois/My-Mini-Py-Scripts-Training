@@ -21,12 +21,12 @@ for item in language_counter.most_common(15):
 	languages.append(item[0])
 	popularity.append(item[1])
 
-print(languages)
-print(popularity)
+plt.bar(languages, popularity)
 
-# plt.xlabel('Ages')
-# plt.ylabel('Median Salary (USD)')
-# plt.title('Median Salary (USD) by Age')
-# plt.tight_layout()
+plt.xlabel('Programming languages')
+plt.ylabel('Number of people who Use')
+plt.title('Most Popular languages')
 
-# plt.savefig('matplot2-bar1.png')
+plt.tight_layout()
+
+plt.savefig('matplot2-bar1.png')
