@@ -21,8 +21,12 @@ for item in language_counter.most_common(15):
 	languages.append(item[0])
 	popularity.append(item[1])
 
+languages.reverse()
+popularity.reverse()
+
 plt.barh(languages, popularity)
 
+# plt.ylabel('Programming languages')
 plt.xlabel('Number of people who Use')
 plt.title('Most Popular languages')
 
