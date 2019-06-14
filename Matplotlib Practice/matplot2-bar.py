@@ -2,14 +2,19 @@
 import csv
 from matplotlib import pyplot as plt
 import numpy as np
+from collections import Counter
 
 plt.xkcd()
 
 with open('data.csv') as csv_file:
 	csv_reader = csv.DictReader(csv_file)
 
-	row = next(csv_reader)
-	print(row['LanguagesWorkedWith'].split(';'))
+	language_counter = Counter()
+	
+	for row in csv_reader:
+		language_counter.update(row['LanguagesWorkedWith'].split(';'))
+
+print(language_counter)
 
 # plt.xlabel('Ages')
 # plt.ylabel('Median Salary (USD)')
