@@ -40,7 +40,7 @@ plt.legend()
 # plt.grid(True)
 plt.tight_layout()
 
-plt.savefig('bar1.png')
+plt.savefig('matplot2-bar1.png')
 
 # plt.show() # Issue with this command, my system cannot render a GUI interface,
 # however I can export the plot in png.
