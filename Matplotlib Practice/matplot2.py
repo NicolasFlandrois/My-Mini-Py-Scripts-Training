@@ -1,4 +1,4 @@
-#Barchart Practice
+ #Barchart Practice
 from matplotlib import pyplot as plt
 import numpy as np
 
@@ -33,6 +33,8 @@ plt.bar(x_indexes, dev_y, width=width, color='#444444', label='All Devs')
 plt.xlabel('Ages')
 plt.ylabel('Median Salary (USD)')
 plt.title('Median Salary (USD) by Age')
+
+plt.xticks(ticks=x_indexes, labels=ages_x)
 
 plt.legend()
 # plt.grid(True)
