@@ -14,7 +14,7 @@ with open('data.csv') as csv_file:
 	for row in csv_reader:
 		language_counter.update(row['LanguagesWorkedWith'].split(';'))
 
-print(language_counter)
+print(language_counter.most_common(15))
 
 # plt.xlabel('Ages')
 # plt.ylabel('Median Salary (USD)')
