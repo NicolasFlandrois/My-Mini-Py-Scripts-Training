@@ -19,9 +19,3 @@ plt.pie(slices, labels=labels, explode=explode, shadow=True, startangle=90,
 plt.title('Programming language popularity')
 plt.tight_layout()
 plt.savefig('matplot3-piechart.png')
-
-# Colors:
-# Blue = #008fd5
-# Red = #fc4f30
-# Yellow = #e5ae37
-# Green = #6d904f
