@@ -14,7 +14,13 @@ player3 = [1, 1, 1, 2, 2, 2, 3, 3, 3]
 # player2 = [0, 1, 2, 2, 2, 4, 4, 4, 4]
 # player3 = [0, 1, 1, 1, 2, 2, 3, 3, 4]
 
-plt.stackplot(minutes, player1, player2, player3)
+labels = ["Player 1", "Player 2", "Player 3"]
+
+plt.stackplot(minutes, player1, player2, player3, labels=labels)
+# A stack plot will stack each value for each 'players', on top of each other
+# as a compound display, over time.
+
+plt.legend()
 
 plt.title('Stack Plot Practice')
 plt.tight_layout()
