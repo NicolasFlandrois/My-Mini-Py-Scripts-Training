@@ -20,7 +20,7 @@ plt.stackplot(minutes, player1, player2, player3, labels=labels)
 # A stack plot will stack each value for each 'players', on top of each other
 # as a compound display, over time.
 
-plt.legend()
+plt.legend(loc="upper left")
 
 plt.title('Stack Plot Practice')
 plt.tight_layout()
