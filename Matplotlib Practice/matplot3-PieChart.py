@@ -12,7 +12,9 @@ explode = [0, 0, 0, 0.1, 0] # Explode == Detach and expose a zone from chart.
 
 
 plt.pie(slices, labels=labels, explode=explode, shadow=True, startangle=90,
-	wedgeprops={'edgecolor':'black'})
+	autopct='%1.1f%%', wedgeprops={'edgecolor':'black'})
+
+# autopct='%1.1f%%' sets to display the actual percentages on the chart.
 
 plt.title('Programming language popularity')
 plt.tight_layout()
