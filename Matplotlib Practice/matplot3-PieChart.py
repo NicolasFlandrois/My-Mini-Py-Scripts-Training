@@ -5,10 +5,11 @@ from matplotlib import pyplot as plt
 
 plt.xkcd()
 
-slices = [120, 80]
-labels = ['sixty', 'fourty']
+slices = [120, 80, 30, 20]
+labels = ['Not-sixty', 'Not-fourty', 'Extra1', 'Extra2']
+colors = ['blue', 'red', 'yellow', 'green']
 
-plt.pie(slices, labels=labels)
+plt.pie(slices, labels=labels, colors=colors, wedgeprops={'edgecolor':'black'})
 
 plt.title('Awsome Pie Chart')
 plt.tight_layout()
