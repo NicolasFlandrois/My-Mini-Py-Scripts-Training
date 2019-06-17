@@ -15,8 +15,10 @@ player3 = [1, 1, 1, 2, 2, 2, 3, 3, 3]
 # player3 = [0, 1, 1, 1, 2, 2, 3, 3, 4]
 
 labels = ["Player 1", "Player 2", "Player 3"]
+colors = ["#6d904f", "#fc4f30", "#008fd5"]
 
-plt.stackplot(minutes, player1, player2, player3, labels=labels)
+plt.stackplot(minutes, player1, player2, player3, labels=labels,
+	colors=colors)
 # A stack plot will stack each value for each 'players', on top of each other
 # as a compound display, over time.
 
