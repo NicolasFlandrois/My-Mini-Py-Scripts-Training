@@ -11,6 +11,9 @@ colors = [7, 5, 9, 7, 5, 7, 2, 5, 3, 7, 1, 2, 8, 1, 9, 2, 5, 6, 7, 5]
 plt.scatter(x, y, s=100, c=colors, cmap='Greens', edgecolor='black', 
 			linewidth=1, alpha=0.75)
 
+cbar = plt.colorbar()
+cbar.set_label('Satisfaction')
+
 # Ref Colormap : https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
 # Ref Marker Styles: 
 # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html
