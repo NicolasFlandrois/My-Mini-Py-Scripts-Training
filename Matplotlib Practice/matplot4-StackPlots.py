@@ -18,7 +18,7 @@ plt.stackplot(minutes, player1, player2, player3, labels=labels,
 # A stack plot will stack each value for each 'players', on top of each other
 # as a compound display, over time.
 
-plt.legend(loc=(0.07, 0.05))
+plt.legend(loc=(0.07, 0.05)) # Localisation in percentages.
 
 plt.title('Stack Plot Practice')
 plt.tight_layout()
