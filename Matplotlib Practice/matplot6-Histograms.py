@@ -13,10 +13,13 @@ bins = [10, 20, 30, 40 , 50, 60, 70, 80, 90, 100]
 
 plt.hist(ages, bins=bins, edgecolor='black', log=True)
 
-# median_age = 29
-# color = '#fc4f30'
+median_age = 29
+color = '#fc4f30'
 
-# plt.legend()
+plt.axvline(median_age, color=color, label='Age Medium', linewidth=2)
+#Axes Vertical Line
+
+plt.legend()
 
 plt.title('Ages of Respondents')
 plt.xlabel('Ages')
