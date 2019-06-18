@@ -16,15 +16,15 @@ plt.plot(ages, py_salaries, label='Python')
 
 overall_median = 57287
 
-plt.fill_between(ages, py_salaries, overall_median,
-				 where=(py_salaries > overall_median),
+plt.fill_between(ages, py_salaries, dev_salaries,
+				 where=(py_salaries > dev_salaries),
 				 interpolate=True, color='green', alpha=0.25)
-				 # Fill When OVER the Median in GREEN
+				 # Fill When OVER the other plot in GREEN
 
-plt.fill_between(ages, py_salaries, overall_median,
-				 where=(py_salaries <= overall_median),
+plt.fill_between(ages, py_salaries, dev_salaries,
+				 where=(py_salaries <= dev_salaries),
 				 interpolate=True, color='red', alpha=0.25)
-				 # Fill When Bellow the Median in RED
+				 # Fill When Bellow the other plot in RED
 
 plt.legend()
 
