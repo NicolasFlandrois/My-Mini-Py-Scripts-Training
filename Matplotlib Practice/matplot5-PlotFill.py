@@ -18,11 +18,13 @@ overall_median = 57287
 
 plt.fill_between(ages, py_salaries, overall_median,
 				 where=(py_salaries > overall_median),
-				 interpolate=True, alpha=0.25) # Fill When OVER the Median
+				 interpolate=True, color='green', alpha=0.25)
+				 # Fill When OVER the Median in GREEN
 
 plt.fill_between(ages, py_salaries, overall_median,
 				 where=(py_salaries <= overall_median),
-				 interpolate=True, alpha=0.25) # Fill When Bellow the Median
+				 interpolate=True, color='red', alpha=0.25)
+				 # Fill When Bellow the Median in RED
 
 plt.legend()
 
