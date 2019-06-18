@@ -21,6 +21,14 @@ plt.plot_date(dates, y, linestyle='solid')
 
 plt.gcf().autofmt_xdate()
 # Auto formating dates display on X axes
+# gcf == Get Current Figure
+
+date_format = mpl_dates.DateFormatter('%b, %d %Y')
+# Ref Datetime formating code: 
+# https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+
+plt.gca().xaxis.set_major_formatter(date_format)
+# gca == Get Current Axes
 
 # data = pd.read_csv('timedata.csv')
 # price_date = data['Date']
