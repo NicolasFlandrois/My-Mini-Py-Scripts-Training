@@ -14,10 +14,11 @@ plt.plot(ages, dev_salaries, color='#444444',
 
 plt.plot(ages, py_salaries, label='Python')
 
-# overall_median = 57287
+overall_median = 57287
 
-plt.fill_between(ages, py_salaries, alpha=0.25) # Adding some transparency, 
-# for easier visual reading.
+plt.fill_between(ages, py_salaries, overall_median, alpha=0.25)
+# Defining overall_median as the Y value to fill between. 
+#Customisation Up to Where, and Toward what value do we want to fill in.
 
 plt.legend()
 
