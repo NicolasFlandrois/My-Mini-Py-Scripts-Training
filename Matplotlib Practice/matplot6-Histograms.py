@@ -16,7 +16,7 @@ plt.hist(ages, bins=bins, edgecolor='black', log=True)
 median_age = 29
 color = '#fc4f30'
 
-plt.axvline(median_age, color=color, label='Age Medium', linewidth=2)
+plt.axvline(median_age, color=color, label='Age Median', linewidth=2)
 #Axes Vertical Line
 
 plt.legend()
