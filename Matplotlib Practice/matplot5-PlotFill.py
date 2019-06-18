@@ -18,9 +18,11 @@ overall_median = 57287
 
 plt.fill_between(ages, py_salaries, overall_median,
 				 where=(py_salaries > overall_median),
-				 interpolate=True, alpha=0.25)
-				 # With the Where condition, the plot fills only the area 
-				 # corrsponding to that condition.
+				 interpolate=True, alpha=0.25) # Fill When OVER the Median
+
+plt.fill_between(ages, py_salaries, overall_median,
+				 where=(py_salaries <= overall_median),
+				 interpolate=True, alpha=0.25) # Fill When Bellow the Median
 
 plt.legend()
 
