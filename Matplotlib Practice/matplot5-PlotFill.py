@@ -16,9 +16,11 @@ plt.plot(ages, py_salaries, label='Python')
 
 overall_median = 57287
 
-plt.fill_between(ages, py_salaries, overall_median, alpha=0.25)
-# Defining overall_median as the Y value to fill between. 
-#Customisation Up to Where, and Toward what value do we want to fill in.
+plt.fill_between(ages, py_salaries, overall_median,
+				 where=(py_salaries > overall_median),
+				 interpolate=True, alpha=0.25)
+				 # With the Where condition, the plot fills only the area 
+				 # corrsponding to that condition.
 
 plt.legend()
 
