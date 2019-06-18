@@ -6,6 +6,12 @@ from matplotlib import dates as mpl_dates
 plt.style.use('seaborn')
 
 data = pd.read_csv('timedata.csv')
+
+data['Date'] = pd.to_datetime(data['Date'])
+# Convert with Pandas, the string from the data set, into a Datetime Value
+data.sort_values('Date', inplace=True)
+# inplace=True will modify the data directly in the dataset
+
 price_date = data['Date']
 price_close = data['Close']
 
