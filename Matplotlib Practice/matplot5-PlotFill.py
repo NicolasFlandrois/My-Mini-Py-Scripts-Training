@@ -18,12 +18,14 @@ overall_median = 57287
 
 plt.fill_between(ages, py_salaries, dev_salaries,
 				 where=(py_salaries > dev_salaries),
-				 interpolate=True, color='green', alpha=0.25)
+				 interpolate=True, color='green', alpha=0.25,
+				 label='Above Average')
 				 # Fill When OVER the other plot in GREEN
 
 plt.fill_between(ages, py_salaries, dev_salaries,
 				 where=(py_salaries <= dev_salaries),
-				 interpolate=True, color='red', alpha=0.25)
+				 interpolate=True, color='red', alpha=0.25,
+				 label='Bellow Average')
 				 # Fill When Bellow the other plot in RED
 
 plt.legend()
