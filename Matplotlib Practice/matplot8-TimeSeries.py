@@ -5,38 +5,17 @@ from matplotlib import dates as mpl_dates
 
 plt.style.use('seaborn')
 
-dates = [
-    datetime(2019, 5, 24),
-    datetime(2019, 5, 25),
-    datetime(2019, 5, 26),
-    datetime(2019, 5, 27),
-    datetime(2019, 5, 28),
-    datetime(2019, 5, 29),
-    datetime(2019, 5, 30)
-]
-
-y = [0, 1, 3, 4, 6, 5, 7]
+data = pd.read_csv('timedata.csv')
+price_date = data['Date']
+price_close = data['Close']
 
 plt.plot_date(dates, y, linestyle='solid')
 
 plt.gcf().autofmt_xdate()
-# Auto formating dates display on X axes
-# gcf == Get Current Figure
 
-date_format = mpl_dates.DateFormatter('%b, %d %Y')
-# Ref Datetime formating code: 
-# https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
-
-plt.gca().xaxis.set_major_formatter(date_format)
-# gca == Get Current Axes
-
-# data = pd.read_csv('timedata.csv')
-# price_date = data['Date']
-# price_close = data['Close']
-
-# plt.title('Bitcoin Prices')
-# plt.xlabel('Date')
-# plt.ylabel('Closing Price')
+plt.title('Bitcoin Prices')
+plt.xlabel('Date')
+plt.ylabel('Closing Price')
 
 plt.tight_layout()
 
