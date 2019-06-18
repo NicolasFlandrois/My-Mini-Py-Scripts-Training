@@ -7,6 +7,8 @@ plt.style.use('fivethirtyeight')
 
 ages = [18, 19, 21, 25, 26, 26, 30, 32, 38, 45, 55]
 
+plt.hist(ages, bins=5)
+
 # data = pd.read_csv('data3.csv')
 # ids = data['Responder_id']
 # ages = data['Age']
