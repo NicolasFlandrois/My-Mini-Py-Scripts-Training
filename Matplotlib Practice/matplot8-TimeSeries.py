@@ -17,6 +17,8 @@ dates = [
 
 y = [0, 1, 3, 4, 6, 5, 7]
 
+plt.plot_date(dates, y)
+
 # data = pd.read_csv('timedata.csv')
 # price_date = data['Date']
 # price_close = data['Close']
