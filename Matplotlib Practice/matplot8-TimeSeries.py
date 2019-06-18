@@ -9,7 +9,10 @@ data = pd.read_csv('timedata.csv')
 price_date = data['Date']
 price_close = data['Close']
 
-plt.plot_date(dates, y, linestyle='solid')
+plt.plot_date(price_date, price_close, linestyle='solid')
+# NB: This import of data just set up the date as a string ,
+# and not as a datetime. If the data is scrambled out or order, then
+# The graph would be False.
 
 plt.gcf().autofmt_xdate()
 
