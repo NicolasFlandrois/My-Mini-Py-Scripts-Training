@@ -8,7 +8,10 @@ y = [7, 4, 3, 9, 1, 3, 2, 5, 2, 4, 8, 7, 1, 6, 4, 9, 7, 7, 5, 1]
 
 colors = [7, 5, 9, 7, 5, 7, 2, 5, 3, 7, 1, 2, 8, 1, 9, 2, 5, 6, 7, 5]
 
-plt.scatter(x, y, s=100, c=colors, cmap='Greens', edgecolor='black', 
+sizes = [209, 486, 381, 255, 191, 315, 185, 228, 174,
+         538, 239, 394, 399, 153, 273, 293, 436, 501, 397, 539]
+
+plt.scatter(x, y, s=sizes, c=colors, cmap='Greens', edgecolor='black', 
 			linewidth=1, alpha=0.75)
 
 cbar = plt.colorbar()
@@ -17,12 +20,6 @@ cbar.set_label('Satisfaction')
 # Ref Colormap : https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html
 # Ref Marker Styles: 
 # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html
-
-
-sizes = [209, 486, 381, 255, 191, 315, 185, 228, 174,
-         538, 239, 394, 399, 153, 273, 293, 436, 501, 397, 539]
-
-
 
 # data = pd.read_csv('2019-05-31-data.csv')
 # view_count = data['view_count']
