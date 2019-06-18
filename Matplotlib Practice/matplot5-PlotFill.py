@@ -3,7 +3,7 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('data2.csv')
 ages = data['Age']
 dev_salaries = data['All_Devs']
 py_salaries = data['Python']
@@ -15,6 +15,9 @@ plt.plot(ages, dev_salaries, color='#444444',
 plt.plot(ages, py_salaries, label='Python')
 
 # overall_median = 57287
+
+plt.fill_between(ages, py_salaries, alpha=0.25) # Adding some transparency, 
+# for easier visual reading.
 
 plt.legend()
 
