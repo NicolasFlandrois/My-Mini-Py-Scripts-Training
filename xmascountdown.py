@@ -3,7 +3,8 @@
 # Thu 20 Dec 2018 03:04:22 PM CET 
 # Author: Nicolas Flandrois
 # Description: Christmas countdown, according to a choosen year.
-# NB: This script is not UTC/Timezone aware. Time is set as naive, using your local (computer) timezone as default.
+# NB: This script is not UTC/Timezone aware.
+# Time is set as naive, using your local (computer) timezone as default.
 
 import time
 import datetime
@@ -20,7 +21,8 @@ def clean():
 try:
     Year = int(input("Xmas of which year? "))
 except:
-    print("Oops! ",sys.exc_info()[0],""" occured. That was no valid number.  Try again...
+    print("Oops! ",sys.exc_info()[0],
+        """ occured. That was no valid number.  Try again...
 choose a year, in positive number, format YYYY.""")
 
 r = range(1, 9999)
@@ -43,28 +45,34 @@ while True:
     cd_m = int(abs(delta.seconds - (cd_h * 3600))/60)
     cd_s = int(abs(delta.seconds - ( cd_h*3600 + cd_m*60 )))
 
-    print("""
-#     #                                                                                          
- #   #     #    #   ##    ####      ####   ####  #    # #    # ##### #####   ####  #    # #    # 
-  # #      ##  ##  #  #  #         #    # #    # #    # ##   #   #   #    # #    # #    # ##   # 
-   #       # ## # #    #  ####     #      #    # #    # # #  #   #   #    # #    # #    # # #  # 
-  # #      #    # ######      #    #      #    # #    # #  # #   #   #    # #    # # ## # #  # # 
- #   #     #    # #    # #    #    #    # #    # #    # #   ##   #   #    # #    # ##  ## #   ## 
-#     #    #    # #    #  ####      ####   ####   ####  #    #   #   #####   ####  #    # #    # 
-""")
+    print("#     #")
+    print(" #   #     #    #   ##    #### ")
+    print("  # #      ##  ##  #  #  #     ")
+    print("   #       # ## # #    #  #### ")
+    print("  # #      #    # ######      #")
+    print(" #   #     #    # #    # #    #")
+    print("#     #    #    # #    #  #### ")
+    print("")
+    print(" ####   ####  #    # #    # ##### #####   ####  #    # #    #")
+    print("#    # #    # #    # ##   #   #   #    # #    # #    # ##   #")
+    print("#      #    # #    # # #  #   #   #    # #    # #    # # #  #")
+    print("#      #    # #    # #  # #   #   #    # #    # # ## # #  # #")
+    print("#    # #    # #    # #   ##   #   #    # #    # ##  ## #   ##")
+    print(" ####   ####   ####  #    #   #   #####   ####  #    # #    #")  
     print("")
     print("Countdown until christmas of: ", xd.strftime("%A, %d of %B %Y"))
     print("")
     print("Total days left: ", delta.days)
     print("")
     print("or more precisely, time left: ")
-    print(cd_Y, "Years", cd_W, "Weeks", cd_D, "Days - ", "%02d" % cd_h, ":", "%02d" % cd_m, ":", "%02d" % cd_s, "; Local Time.")
+    print(cd_Y, "Years", cd_W, "Weeks", cd_D, "Days - ", "%02d" % cd_h, ":",
+        "%02d" % cd_m, ":", "%02d" % cd_s, "; Local Time.")
     print("")
 
     time.sleep(1)
     clean()
     
-#######################################################################################################################################################
+##############################################################################
 #                                .:xxxxxxxx:.
 #                             .xxxxxxxxxxxxxxxx.
 #                            :xxxxxxxxxxxxxxxxxxx:.
@@ -129,4 +137,4 @@ while True:
 #                       :N,,#^ N,,/M 1p jC  ] `N,,A jC  $                        
 #                       :N        ]L                                             
 #                        '      `"                                               
-#######################################################################################################################################################
+##############################################################################
