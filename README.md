@@ -6,123 +6,131 @@ In this repository I'll stack tiny scripts, that has no bigger projects. It will
 ----------------------------
 ## TOOLS:
 
-- ask_integer.py:
+- **ask_integer.py**:
 
-	create a fonction to verify if input number is integer and within range.
+    create a fonction to verify if input number is integer and within range.
 
-	*status*: Finished
+    *status*: Finished
 
 --------------------------
 ## TINY PROJECTS:
 
-+ autogitcommitandpush.py:
++ **autogitcommitandpush.py**:
 
-	This tiny project aim to automatically run bash scripts, from a python program, to commit in git every 20 min (1200sec), and after a loop of 4 cycles, push to remote GitHub repository.
-	
-	*status*: Finished
+    This tiny project aim to automatically run bash scripts, from a python program, to commit in git every 20 min (1200sec), and after a loop of 4 cycles, push to remote GitHub repository.
+    
+    *status*: Finished
 
-+ Guess-the-number.py:
++ **Guess-the-number.py**:
 
-	Small exercice/game, create a small guessing game: guess the randomly generated number within range [1;100], within 7 or 8 guess.
-	
-	*status*: Finished
+    Small exercice/game, create a small guessing game: guess the randomly generated number within range [1;100], within 7 or 8 guess.
+    
+    *status*: Finished
 
-+ xmascountdown.py:
++ **xmascountdown.py**:
 
-	Create a Christmas count down, in Python.
-	
-	*status*: Finished
+    Create a Christmas count down, in Python.
+    
+    *status*: Finished
 
-+ drink_dispenser [Folder]:
++ **drink_dispenser** [Folder]:
 
-	Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks.
-	
-	*status*: **[Work in progress]**
+    Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks.
+    
+    *status*: **[Work in progress]**
 
-+ fibonacci.py:
++ **fibonacci.py**:
 
-	Generator and intention/comprehension list to create a fibonacci sequence, for n iterations.
-	
-	*status*: Finished
+    Generator and intention/comprehension list to create a fibonacci sequence, for n iterations.
+    
+    *status*: Finished
 
-+ tribonacci.py: 
++ **tribonacci.py**: 
 
-	Generator and intention/comprehension list to create a tribonacci sequence, for n iterations.
-	
-	*status*: Finished
-	
-+ Deck of cards (exercice):
+    Generator and intention/comprehension list to create a tribonacci sequence, for n iterations.
+    
+    *status*: Finished
+    
++ **Deck of cards** ('class'/OOP exercice):
 
-	Generate a deck of cards, and deal hands to players.
-	Using Object Oriented Programming, with python Classes system
-	
-	*status*: Finished
-	
-+ Passphrase generator [pw.py]:
+    Generate a deck of cards, and deal hands to players.
+    Using Object Oriented Programming, with python Classes system
+    
+    *status*: Finished
+    
++ **Passphrase generator** [pw.py]:
 
-	From a given text (or collection of books and dictionnaries, the more the merryer), the script will create a list of words choosen entirely randomly.
-	
-	*status*: **[Work in progress]**
+    From a given text (or collection of books and dictionnaries, the more the merryer), the script will create a list of words choosen entirely randomly.
+    
+    *status*: **[Work in progress]**
 
-+ Pychain:
++ **Pychain** (simple blockchain in python):
 
-	Create in python a simple blockchain (as an exercise). -details and what will it be used for, to be determined-
-	
-	*status*: **[Ice box - Waiting to work on it]**
+    Create in python a simple blockchain (as an exercise). -details and what will it be used for, to be determined-
+    
+    *status*: **[Ice box - Waiting to work on it]**
 
-+ rename.py:
++ **rename.py**:
 
-	Create in python an automating renaming multiple files script in a given directory.
-	
-	*status*: Finished
+    Create in python an automating renaming multiple files script in a given directory.
+
+    *status*: Finished
+
++ **Random Walk**:
+    
+    Monte Carlo simulation practice, applied to a random walk. cf description in the file.
+
+    *status*: Finished
 
 -----------------------------
 ## EXERCICES/PRACTICES:
 
-- SAN ANTONIO: Suivi d'exercices de cours Démarrez votre projet en Python. Mini programme donnant des citations de San Antonio
-	
-	*status*: Finished
+- **SAN ANTONIO** (Open Classroom exercise): 
 
-- Matplotlib practice:
+    Suivi d'exercices de cours Démarrez votre projet en Python. Mini programme donnant des citations de San Antonio 
+    
+    *status*: Finished
 
-	Follows [Youtube tutorial from Corey Schafer](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_) on Matplotlib
-	
-	*status*: Finished
+- **Matplotlib practice**:
+
+    Follows [Youtube tutorial from Corey Schafer](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_) on Matplotlib
+    
+    *status*: Finished
 
 ----------------------------
 ## Mini projects that moved to become a project of its own.
 
 Those projects moved to their own repositories:
 
-+ Stardate Project: 
-	
-	- Generate (star trek) Stardate according to current time. Changing reference date.
-	- Convert a date for input gregorian date (ISO-8601), to a stardate.
-	- Translate a stardate input to a Gregorian date (ISO-8601).
-	- This project has now an [independant GitHub Repository](https://github.com/NicolasFlandrois/stardate.git), and is no longer followed in this My-Mini-Python-Script Repo.
-	
-	*status*: Finished - v2
++ **Stardate Project**: 
+    
+    - Generate (star trek) Stardate according to current time. Changing reference date.
+    - Convert a date for input gregorian date (ISO-8601), to a stardate.
+    - Translate a stardate input to a Gregorian date (ISO-8601).
+    - This project has now an [independant GitHub Repository](https://github.com/NicolasFlandrois/stardate.git), and is no longer followed in this My-Mini-Python-Script Repo.
+    
+    *status*: Finished - v2
 
-+ Mayan Calendar Project :
++ **Mayan Calendar Project** :
 
-	- Generate of Mayan Long Count Calendar according to current time. Changing reference date.
-	- Convert an input date (from gregorian ISO-8601 calendar) to Long Count.
-	- Translate a Long Count Input, into a Gregorian date (ISO-8601 calendar).
-	- Same 2 generator, convertor, translator, for Tzolkin and Ha'ab Mayan Calendar. Which is more difficult, as they are cycles, and don't refer to a year.
-	- This project has now an [independant GitHub Repository](https://github.com/NicolasFlandrois/maya_date.git), and is no longer followed in this My-Mini-Python-Script Repo.
-	
-	*status*: Finished - v1
+    - Generate of Mayan Long Count Calendar according to current time. Changing reference date.
+    - Convert an input date (from gregorian ISO-8601 calendar) to Long Count.
+    - Translate a Long Count Input, into a Gregorian date (ISO-8601 calendar).
+    - Same 2 generator, convertor, translator, for Tzolkin and Ha'ab Mayan Calendar. Which is more difficult, as they are cycles, and don't refer to a year.
+    - This project has now an [independant GitHub Repository](https://github.com/NicolasFlandrois/maya_date.git), and is no longer followed in this My-Mini-Python-Script Repo.
+    
+    *status*: Finished - v1
 
-+ Name Data Base Generator (python + SQL):
++ **Name Data Base Generator** (python + SQL):
 
-	- The python generator will create random name association from lists of male names, female names and Family names, to generate a sql data base. Further more this kind of data base generator, can generate massive amount of data (names pairs). Such data base can be use to test software and scripts needing data. Such generator can be used for other objects than names.
+    - The python generator will create random name association from lists of male names, female names and Family names, to generate a sql data base. Further more this kind of data base generator, can generate massive amount of data (names pairs). Such data base can be use to test software and scripts needing data. Such generator can be used for other objects than names.
 
-	- Each entry containing:
+    - Each entry containing:
         + ID SQL Key (autogenerated by SQL)
-	    + Family name (randomly paired with first name)
-	    + First name (randomly paired with family name)
-	    + Gender (M/F depending on first name randomly assigned)
-	    + Birth date (Random)
-	    + Socialsecurity number (According to gender + Year of birth + Month of birth + Randomly assigned department number in range or within a list + 8 random numbers) cf: [wiki page](https://fr.wikipedia.org/wiki/Num%C3%A9ro_de_s%C3%A9curit%C3%A9_sociale_en_France#ancrage_C)
+        + Family name (randomly paired with first name)
+        + First name (randomly paired with family name)
+        + Gender (M/F depending on first name randomly assigned)
+        + Birth date (Random)
+        + Socialsecurity number (According to gender + Year of birth + Month of birth + Randomly assigned department number in range or within a list + 8 random numbers) cf: [wiki page](https://fr.wikipedia.org/wiki/Num%C3%A9ro_de_s%C3%A9curit%C3%A9_sociale_en_France#ancrage_C)
 
-	*status*: **[Ice box - Waiting to work on it]**
+    *status*: **[Ice box - Waiting to work on it]**
