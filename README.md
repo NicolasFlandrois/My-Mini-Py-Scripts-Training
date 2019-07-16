@@ -1,7 +1,7 @@
 # My-Mini-Py-Scripts
 Mini python Scripts
 
-In this repository I'll stack tiny scripts, that has no bigger projects. It will mainly be automation of command lines and small programs.
+In this repository I'll stack tiny scripts, command lines automation, small programs, practices, and exercices that are not part of a bigger projects,  or not big enough to have it's own project repository.
 
 ----------------------------
 ## TOOLS:
