@@ -3,49 +3,76 @@ Mini python Scripts
 
 In this repository I'll stack tiny scripts, that has no bigger projects. It will mainly be automation of command lines and small programs.
 
-#################################################################################################################
-TOOLS:
+----------------------------
+## TOOLS:
 
-Tool project A: ask_integer.py = create a fonction to verify if input number is integer and within range.
+- ask_integer.py:
+	create a fonction to verify if input number is integer and within range.
 
-#################################################################################################################
-TINY PROJECTS:
+--------------------------
+## TINY PROJECTS:
 
-Tiny project 1: autogitcommitandpush.py
-This tiny project aim to automatically run bash scripts, from a python program, to commit in git every 20 min (1200sec), and after a loop of 4 cycles, push to remote GitHub repository.
++ autogitcommitandpush.py:
+	This tiny project aim to automatically run bash scripts, from a python program, to commit in git every 20 min (1200sec), and after a loop of 4 cycles, push to remote GitHub repository.
 
-Tiny project 2: Guess-the-number.py
-Small exercice, create a small guessing game: guess the randomly generated number within range [1;100], within 7 or 8 guess.
++ Guess-the-number.py:
+	Small exercice/game, create a small guessing game: guess the randomly generated number within range [1;100], within 7 or 8 guess.
 
-Tiny project 3: Create a Christmas count down, in Python. xmascountdown.py
++ xmascountdown.py:
+	Create a Christmas count down, in Python.
 
-Tiny Project 4: Folder drink_dispenser. Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks. 
++ drink_dispenser [Folder]:
+	Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks. 
 	[Work in progress]
 
-Tiny Project 5: Stardate Project: 
++ fibonacci.py:
+	Generator and intention/comprehension list to create a fibonacci sequence, for n iterations.
+
++ tribonacci.py: 
+	Generator and intention/comprehension list to create a tribonacci sequence, for n iterations.
+	
++ Deck of cards (exercice):
+	Generate a deck of cards, and deal hands to players.
+	Using Object Oriented Programming, with python Classes system
+	
++ Passphrase generator [pw.py]:
+	From a given text (or collection of books and dictionnaries, the more the merryer), the script will create a list of words choosen entirely randomly. 
+	[Work in progress]
+
++ Pychain:
+	Create in python a simple blockchain (as an exercise). -details and what will it be used for, to be determined-
+	[Ice box - Waiting to work on it]
+
++ rename.py:
+	Create in python an automating renaming multiple files script in a given directory.
+
+-----------------------------
+## EXERCICES/PRACTICES:
+
+- SAN ANTONIO: Suivi d'exercices de cours Démarrez votre projet en Python. Mini programme donnant des citations de San Antonio
+
+- Matplotlib practice:
+	Follows [Youtube tutorial from Corey Schafer](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_) on Matplotlib
+
+----------------------------
+## Mini projects that moved to become a project of its own.
+
+Those projects moved to their own repositories:
+
++ Stardate Project: 
 	Generate (star trek) Stardate according to current time. Changing reference date.
 	Convert a date for input gregorian date (ISO-8601), to a stardate.
 	Translate a stardate input to a Gregorian date (ISO-8601).
 	This project has now an independant GitHub Repository (https://github.com/NicolasFlandrois/stardate.git), and is no longer followed in this My-Mini-Python-Script Repo.
 
-Tiny Project 6: fibonacci.py, generator and intention/comprehension list to create a fibonacci sequence, for n iterations.
-
-Tiny project 7: Mayan Calendar Project :
++ Mayan Calendar Project :
 	Generate of Mayan Long Count Calendar according to current time. Changing reference date.
 	Convert an input date (from gregorian ISO-8601 calendar) to Long Count.
 	Translate a Long Count Input, into a Gregorian date (ISO-8601 calendar).
 	Same 2 generator, convertor, translator, for Tzolkin and Ha'ab Mayan Calendar. Which is more difficult, as they are cycles, and don't refer to a year.
 	This project has now an independant GitHub Repository (https://github.com/NicolasFlandrois/maya_date.git), and is no longer followed in this My-Mini-Python-Script Repo.
-	
-Tiny project 8: Deck of cards (exercice):
-	Generate a deck of cards, and deal hands to players.
-	Using Object Oriented Programming, with python Classes system
-	
-Tiny project 9: Passphrase generator [pw.py]:
-	From a given text (or collection of books and dictionnaries, the more the merryer), the script will create a list of words choosen entirely randomly. 
-	[Work in progress]
 
-Tiny project 10: Name Data Base Generator (python + SQL):
++ Name Data Base Generator (python + SQL):
 	The python generator will create random name association from lists of male names, female names and Family names, to generate a sql data base. Further more this kind of data base generator, can generate massive amount of data (names pairs). Such data base can be use to test software and scripts needing data. Such generator can be used for other objects than names.
 	Each entry containing:
 	                ID SQL Key (autogenerated by SQL)
@@ -55,15 +82,3 @@ Tiny project 10: Name Data Base Generator (python + SQL):
 	                Birth date (Random)
 	                Socialsecurity number (According to gender + Year of birth + Month of birth + Randomly assigned department number in range or within a list + 8 random numbers) cf: https://fr.wikipedia.org/wiki/Num%C3%A9ro_de_s%C3%A9curit%C3%A9_sociale_en_France#ancrage_C
 	[Ice box - Waiting to work on it]
-
-Tiny project 11: Pychain
-	Create in python a simple blockchain (as an exercise). -details and what will it be used for, to be determined-
-	[Ice box - Waiting to work on it]
-
-Tiny project 12: rename.py
-	Create in python an automating renaming multiple files script in a given directory.
-	
-#################################################################################################################
-EXERCICES OCR:
-
-SAN ANTONIO: Suivi d'exercices de cours Démarrez votre projet en Python. Mini programme donnant des citations de San Antonio
