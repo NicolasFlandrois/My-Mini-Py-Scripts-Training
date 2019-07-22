@@ -97,6 +97,10 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
     
     *status*: Finished
 
+- **Semaphore**: Static Method, intro from Mentor.
+- **Singleton**: Static Method, intro from Mentor.
+- **Factory Method**: Intro to Factory design pattern, from Mentor..
+
 ----------------------------
 ## Mini projects that moved to become a project of its own.
 
