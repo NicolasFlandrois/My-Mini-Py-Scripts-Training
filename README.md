@@ -82,6 +82,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **GIF Converter**:
+    
+    This script (gifconvert.py) is a simple video converter, initially intended to convert videos into GIF files.
+
+    *status*: Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
