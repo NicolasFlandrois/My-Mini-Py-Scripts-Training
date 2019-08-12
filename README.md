@@ -78,9 +78,9 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     Arguments should be:
 
-        - The Path in: os.chdir('/home/User/Pictures')
+    - The Path in: os.chdir('/home/User/Pictures')
 
-        - The New Name, in: new_name, or define f_title as the original if no specific arguments, otherwise if enter a string as an argument, this string becomes the title.
+    - The New Name, in: new_name, or define f_title as the original if no specific arguments, otherwise if enter a string as an argument, this string becomes the title.
 
     *status*: v1.0 Finished
 
