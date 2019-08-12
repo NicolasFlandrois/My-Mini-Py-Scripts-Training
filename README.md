@@ -73,9 +73,13 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 + **rename.py**:
 
     Create in python an automating renaming multiple files script in a given directory.
+
     **Evolutions for v2.0**: I'd like to factorize this function, as a Class, OOP, or a simple function, so I can call this function in any project, and simplify the use, just by passing arguments.
+
     Arguments should be:
+
         - The Path in: os.chdir('/home/User/Pictures')
+
         - The New Name, in: new_name, or define f_title as the original if no specific arguments, otherwise if enter a string as an argument, this string becomes the title.
 
     *status*: v1.0 Finished
