@@ -18,56 +18,56 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 + **autogitcommitandpush.py**:
 
     This tiny project aim to automatically run bash scripts, from a python program, to commit in git every 20 min (1200sec), and after a loop of 4 cycles, push to remote GitHub repository.
-    
+
     *status*: Finished
 
 + **Guess-the-number.py**:
 
     Small exercice/game, create a small guessing game: guess the randomly generated number within range [1;100], within 7 or 8 guess.
-    
+
     *status*: Finished
 
 + **xmascountdown.py**:
 
     Create a Christmas count down, in Python.
-    
+
     *status*: Finished
 
 + **drink_dispenser** [Folder]:
 
     Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks.
-    
+
     *status*: **[Work in progress]**
 
 + **fibonacci.py**:
 
     Generator and intention/comprehension list to create a fibonacci sequence, for n iterations.
-    
+
     *status*: Finished
 
-+ **tribonacci.py**: 
++ **tribonacci.py**:
 
     Generator and intention/comprehension list to create a tribonacci sequence, for n iterations.
-    
+
     *status*: Finished
-    
+
 + **Deck of cards** ('class'/OOP exercice):
 
     Generate a deck of cards, and deal hands to players.
     Using Object Oriented Programming, with python Classes system
-    
+
     *status*: Finished
-    
+
 + **Passphrase generator** [pw.py]:
 
     From a given text (or collection of books and dictionnaries, the more the merryer), the script will create a list of words choosen entirely randomly.
-    
+
     *status*: **[Work in progress]**
 
 + **Pychain** (simple blockchain in python):
 
     Create in python a simple blockchain (as an exercise). -details and what will it be used for, to be determined-
-    
+
     *status*: **[Ice box - Waiting to work on it]**
 
 + **rename.py**:
@@ -77,30 +77,36 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
     *status*: Finished
 
 + **Random Walk**:
-    
+
     Monte Carlo simulation practice, applied to a random walk. cf description in the file.
 
     *status*: Finished
 
 + **GIF Converter**:
-    
+
     This script (gifconvert.py) is a simple video converter, initially intended to convert videos into GIF files.
+
+    *status*: Finished
+
++ **myrange.py**:
+
+    Practice exercise using Iterators, Class and Generators. This script will simulate (recreate) Python's range method.
 
     *status*: Finished
 
 -----------------------------
 ## EXERCICES/PRACTICES:
 
-- **SAN ANTONIO** (Open Classroom exercise): 
+- **SAN ANTONIO** (Open Classroom exercise):
 
-    Suivi d'exercices de cours Démarrez votre projet en Python. Mini programme donnant des citations de San Antonio 
-    
+    Suivi d'exercices de cours Démarrez votre projet en Python. Mini programme donnant des citations de San Antonio
+
     *status*: Finished
 
 - **Matplotlib practice**:
 
     Follows [Youtube tutorial from Corey Schafer](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_) on Matplotlib
-    
+
     *status*: Finished
 
 - **Semaphore**: Static Method, intro from Mentor.
@@ -112,13 +118,13 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
 Those projects moved to their own repositories:
 
-+ **Stardate Project**: 
-    
++ **Stardate Project**:
+
     - Generate (star trek) Stardate according to current time. Changing reference date.
     - Convert a date for input gregorian date (ISO-8601), to a stardate.
     - Translate a stardate input to a Gregorian date (ISO-8601).
     - This project has now an [independant GitHub Repository](https://github.com/NicolasFlandrois/stardate.git), and is no longer followed in this My-Mini-Python-Script Repo.
-    
+
     *status*: Finished - v2
 
 + **Mayan Calendar Project** :
@@ -128,7 +134,7 @@ Those projects moved to their own repositories:
     - Translate a Long Count Input, into a Gregorian date (ISO-8601 calendar).
     - Same 2 generator, convertor, translator, for Tzolkin and Ha'ab Mayan Calendar. Which is more difficult, as they are cycles, and don't refer to a year.
     - This project has now an [independant GitHub Repository](https://github.com/NicolasFlandrois/maya_date.git), and is no longer followed in this My-Mini-Python-Script Repo.
-    
+
     *status*: Finished - v1
 
 + **Name Data Base Generator** (python + SQL):
