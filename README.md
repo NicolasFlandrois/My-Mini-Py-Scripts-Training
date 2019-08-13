@@ -102,6 +102,18 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **tips_and_tricks.py**:
+
+    Practice exercise using Itertools, Sorted, f-strings.
+
+    *status*: Finished
+
++ **sort_and_itertools.py**:
+
+    Practice exercise to sort & iterate non ewploitable raw data, using: Itertools, collections, and/or sorted.
+
+    *status*: Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
