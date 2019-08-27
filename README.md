@@ -114,6 +114,24 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **imc.py**:
+
+    This short script (French user) tend to compute a person's "IMC" (Indice de Masse Corporel), the health weight/heigh² ratio.
+
+    *to Do in v2*:
+
+    - Incorporate the New IMC compute formula
+    (Formule d’IMC classique : poids / taille^2
+    Nouvelle formule d’IMC :1,3 x poids / taille^2,5)
+
+    - Script Optimisation
+
+    - Factoring
+
+    - Create a menu (And/Or a GUI)
+
+    *status*: v1.0 Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
