@@ -12,6 +12,13 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
+- **pip_auto_update.py**:
+
+    This tool will automatically check your python's pip list in your system, and update all packages to their newest versions.
+    Then it will display a summary, with double checking points (number of packages before update compared to after update; and the number of packages that have been updated). Then it will display the list of updated packages: New Versions vs. Old versions.
+
+    *status*: Finished
+
 --------------------------
 ## TINY PROJECTS:
 
