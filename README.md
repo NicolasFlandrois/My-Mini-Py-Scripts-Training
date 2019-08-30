@@ -132,6 +132,28 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: v1.0 Finished
 
++ **age.py**:
+
+    Give it a Birth Date, it'll compute your exact age at the time of computing.
+
+    *status*: Finished
+
++ **secretsanta.py**:
+
+    A mathematically proven way to randomly assign Secret Santa's to participants. Based on the Book of Dr Hannah Fry 'The indisputable existence of Santa Claus'.
+    Give it the number of participants, it will give you a ready to print and cut document for Picking a pairing ticket (1 secret Santa & 1 gift receiving participant... Randomly assigned), in a [Santa's] Hat.
+    Cut the Pairing Tickets, place them in a Hat.
+    Each participants pick a ticket, with a Secret Santa ID number which they are, and to whom the'll secret santa gift offering this year.
+    Display the Empty List. Each participant place their name in from of his Secret Santa ID.
+    Leave the list to display, so participants can know to whom they will offer a secret santa gift this year.
+    Random, Fair, Efficient!
+
+    ***Possible Evolution***:
+
+    - Automate and randomize even further, by giving it a list of name. Reuse the random pairing algorythm. Send an email/sms to each secret santa, directly the name to whom they'll offer a secret santa gift. (Leaving No ways to reprint of reverse engineer it.)
+
+    *status*: Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
