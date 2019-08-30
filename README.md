@@ -154,6 +154,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **minineuralnetwork.py**:
+
+    Short exercices, build a neural network of 1 neurone, to predict Pi
+
+    *status*: v1 Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
