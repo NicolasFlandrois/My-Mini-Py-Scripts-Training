@@ -3,7 +3,7 @@
 # Date: Fri 30 Aug 2019 13:50:22 CEST
 # Author: Nicolas Flandrois
 
-from datetime import datetime, timedelta
+from datetime import datetime
 
 bdlt_Y = int(input("Year of Birth (YYYY Format):\t"))
 bdlt_m = int(input("Month of Birth (MM Format):\t"))
