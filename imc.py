@@ -28,7 +28,7 @@ print("""L’IMC (Indice de Masse Corporelle) est notamment utilisé par les
 diététiciens pour situer le poids d’une personne par rapport à la norme
 des personnes de sa taille et de son poids.""")
 
-weight = float(input('Poid (kg)? \t'))
+weight = float(input('Poids (kg)? \t'))
 height = float(input('Taille (m)? \t'))
 
 imc = round((weight / pow(height, 2)), 2)
@@ -57,11 +57,11 @@ if int(imc) in range(0, 20):
     print('\n Pour être dans la catégorie cible suivante :\n \
     >>>>  Corpulence normale \t Risque de maladie faible')
 
-    print("Poid Cible moyen :\t", target_weight(22, height),
+    print("Poids Cible moyen :\t", target_weight(22, height),
           "kg. (Soit ", round((target_weight(22, height)) - weight, 2), "kg à gagner.)")
-    print("Poid Cible max/au plus mince :\t", target_weight(20, height),
+    print("Poids Cible max/au plus mince :\t", target_weight(20, height),
           "kg. (Soit ", round((target_weight(20, height)) - weight, 2), "kg à gagner.)")
-    print("Poid Cible min/au plus gros :\t", target_weight(25, height),
+    print("Poids Cible min/au plus gros :\t", target_weight(25, height),
           "kg. (Soit ", round((target_weight(25, height)) - weight, 2), "kg à gagner.)")
 elif int(imc) in range(20, 25):
     print('Votre Objectif est de maintenir votre forme. Vous êtes dans l\'IMC cible.')
@@ -69,11 +69,11 @@ else:
     print('\n Pour être dans la catégorie cible suivante :\n \
     >>>>  Corpulence normale \t Risque de maladie faible')
 
-    print("Poid Cible moyen :\t", target_weight(22, height),
+    print("Poids Cible moyen :\t", target_weight(22, height),
           "kg. (Soit ", round((weight - target_weight(22, height)), 2), "kg à perdre.)")
-    print("Poid Cible max/au plus mince :\t", target_weight(20, height),
+    print("Poids Cible max/au plus mince :\t", target_weight(20, height),
           "kg. (Soit ", round((weight - target_weight(20, height)), 2), "kg à perdre.)")
-    print("Poid Cible min/au plus gros :\t", target_weight(25, height),
+    print("Poids Cible min/au plus gros :\t", target_weight(25, height),
           "kg. (Soit ", round((weight - target_weight(25, height)), 2), "kg à perdre.)")
 
 print('\n\n\tCeci est une estimation grossière, et ne remplace pas l\'avis \n\
