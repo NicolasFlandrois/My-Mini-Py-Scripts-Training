@@ -26,7 +26,7 @@ from math import pow
 
 print("""L’IMC (Indice de Masse Corporelle) est notamment utilisé par les
 diététiciens pour situer le poids d’une personne par rapport à la norme
-des personnes de sa taille et de son poids.""")
+des personnes de sa taille et de son poids.\n""")
 
 weight = float(input('Poids (kg)? \t'))
 height = float(input('Taille (m)? \t'))
@@ -37,44 +37,48 @@ def target_weight(imc:int, height:float):
     return round((imc * pow(height, 2)), 2)
 
 
-print('Votre IMC est de: \t', imc)
+print(f'\nVotre IMC est de: \t{imc}\n')
 if int(imc) in range(0, 16):
-    print('Maigreur extrême \t Risque de maladie accrue')
+    print('\tMaigreur extrême \t Risque de maladie accrue')
 elif int(imc) in range(16, 20):
-    print('Maigreur \t Risque de maladie élevé')
+    print('\tMaigreur \t Risque de maladie élevé')
 elif int(imc) in range(20, 25):
-    print('Corpulence normale \t Risque de maladie faible')
+    print('\tCorpulence normale \t Risque de maladie faible')
 elif int(imc) in range(25, 30):
-    print('Embonpoint \t Risque de maladie accrue')
+    print('\tEmbonpoint \t Risque de maladie accrue')
 elif int(imc) in range(30, 35):
-    print('Obésité de classe I \t Risque de maladie élevé')
+    print('\tObésité de classe I \t Risque de maladie élevé')
 elif int(imc) in range(35, 40):
-    print('Obésité de classe II \t Risque de maladie très élevé')
+    print('\tObésité de classe II \t Risque de maladie très élevé')
 else:
-    print('Obésité de classe III \t Risque de maladie extrêmement élevé')
+    print('\tObésité de classe III \t Risque de maladie extrêmement élevé')
+
 
 if int(imc) in range(0, 20):
     print('\n Pour être dans la catégorie cible suivante :\n \
     >>>>  Corpulence normale \t Risque de maladie faible')
 
-    print("Poids Cible moyen :\t", target_weight(22, height),
-          "kg. (Soit ", round((target_weight(22, height)) - weight, 2), "kg à gagner.)")
-    print("Poids Cible max/au plus mince :\t", target_weight(20, height),
-          "kg. (Soit ", round((target_weight(20, height)) - weight, 2), "kg à gagner.)")
-    print("Poids Cible min/au plus gros :\t", target_weight(25, height),
-          "kg. (Soit ", round((target_weight(25, height)) - weight, 2), "kg à gagner.)")
+    print(f"Poids Cible moyen :\t {target_weight(22, height)} kg. \
+(Soit {round((target_weight(22, height)) - weight, 2)} kg à gagner.)")
+    print(f"Poids Cible max/au plus mince :\t {target_weight(20, height)} kg. \
+(Soit {round((target_weight(20, height)) - weight, 2)} kg à gagner.)")
+    print(f"Poids Cible min/au plus gros :\t {target_weight(25, height)} kg. \
+(Soit {round((target_weight(25, height)) - weight, 2)} kg à gagner.)")
+
 elif int(imc) in range(20, 25):
     print('Votre Objectif est de maintenir votre forme. Vous êtes dans l\'IMC cible.')
+
 else:
     print('\n Pour être dans la catégorie cible suivante :\n \
     >>>>  Corpulence normale \t Risque de maladie faible')
 
-    print("Poids Cible moyen :\t", target_weight(22, height),
-          "kg. (Soit ", round((weight - target_weight(22, height)), 2), "kg à perdre.)")
-    print("Poids Cible max/au plus mince :\t", target_weight(20, height),
-          "kg. (Soit ", round((weight - target_weight(20, height)), 2), "kg à perdre.)")
-    print("Poids Cible min/au plus gros :\t", target_weight(25, height),
-          "kg. (Soit ", round((weight - target_weight(25, height)), 2), "kg à perdre.)")
+    print(f"Poids Cible moyen :\t {target_weight(22, height)} kg. (Soit \
+{round((weight - target_weight(22, height)), 2)} kg à perdre.)")
+    print(f"Poids Cible max/au plus mince :\t {target_weight(20, height)} kg. \
+(Soit {round((weight - target_weight(20, height)), 2)} kg à perdre.)")
+    print(f"Poids Cible min/au plus gros :\t {target_weight(25, height)} kg. \
+(Soit {round((weight - target_weight(25, height)), 2)} kg à perdre.)")
+
 
 print('\n\n\tCeci est une estimation grossière, et ne remplace pas l\'avis \n\
 d\'un spécialiste de santé (Votre médecin généraliste, ou d\'un nutrisioniste)')
