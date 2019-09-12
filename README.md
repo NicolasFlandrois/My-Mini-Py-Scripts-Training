@@ -163,9 +163,15 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
 + **minineuralnetwork.py**:
 
-    Short exercices, build a neural network of 1 neurone, to predict Pi
+    Short exercices, build a neural network of 1 neurone, to predict Pi.
 
     *status*: v1 Finished
+
++ **yearprogressbar.py**:
+
+    Short progressbar practice. processing a short time of Progressbar simulation, then Displays the Year Progressbar. If year is Leap Year, takes 366 days, if Year is Normal Year, taking 365 days. Ratio Year Day Number / Total Days in the year. Shows Today's Year progression in a While loop, and goes indefinitely.
+
+    *status*: Practice... Ongoing...
 
 -----------------------------
 ## EXERCICES/PRACTICES:
