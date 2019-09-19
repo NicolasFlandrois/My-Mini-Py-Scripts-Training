@@ -173,6 +173,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Practice... Ongoing...
 
++ **ip_valid.py**:
+
+    This short exercice tend to: given a string, validate if is IPv4 IP address format. 2 Versions, 1 with Regex, 1 without.
+
+    *status*: Finished, But can be optimised
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
