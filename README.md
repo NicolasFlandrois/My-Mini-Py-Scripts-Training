@@ -179,6 +179,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished, But can be optimised
 
++ **Flask_ToDo**:
+
+    This practice/proof of concept, set a simple todo list on web interface. No UI, in 1st version. Work on client-server communication. Intro to SQLAlchemy with flask.
+
+    *status*: Finished, But can be optimised
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
