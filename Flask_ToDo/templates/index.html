@@ -17,15 +17,20 @@
         <h2>Incomplete Items</h2>
         <ul>
             {% for todo in incomplete %}
-            <li style="font-size: 20pt">{{ todo.text }} <a href="{{ url_for('complete', id=todo.id) }} ">Mark as completed</a> </li>
+            <li style="font-size: 20pt">{{ todo.text }}     <a style="font-size: 10pt" href="{{ url_for('complete', id=todo.id) }} ">Done ?</a> </li>
             {% endfor %}
         </ul>
         <h2>Completed Items</h2>
         <ul>
             {% for todo in complete %}
-            <li style="font-size: 10pt">{{ todo.text }} <a href="{{ url_for('undo', id=todo.id) }} ">Undo</a> </li>
+            <li style="font-size: 10pt">{{ todo.text }}     <a href="{{ url_for('undo', id=todo.id) }} ">Undo</a> </li>
             {% endfor %}
         </ul>
+    </div>
+    <div>
+        <form action="{{ url_for('clear') }}">
+            <button type="submit">Clear</button>
+        </form>
     </div>
 
 </body>

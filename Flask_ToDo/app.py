@@ -1,13 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-from dbsetup.connect import connect, engine, flaskConfig
+from dbsetup.connect import flaskConfig
 
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = flaskConfig("todo")
-
-# session = connect(todo)
-# engine = engine(todo)
 
 db = SQLAlchemy(app)
 
@@ -47,6 +44,14 @@ def undo(id):
     todo.complete = False
     db.session.commit()
 
+    return redirect(url_for('index'))
+
+@app.route('/clear')
+def clear():
+    clean = Todo.query.filter_by(complete=True).all()
+    for n in clean:
+        db.session.delete(n)
+    db.session.commit()
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
