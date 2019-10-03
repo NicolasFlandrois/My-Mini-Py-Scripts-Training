@@ -8,6 +8,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = flaskConfig("todo")
 
 db = SQLAlchemy(app)
 
+
 class Todo(db.Model):
     """docstring for Todo"""
     id = db.Column(db.Integer, primary_key=True)
@@ -21,12 +22,14 @@ def index():
     complete = Todo.query.filter_by(complete=True).all()
     return render_template('index.html', incomplete=incomplete, complete=complete)
 
+
 @app.route('/add', methods=['POST'])
 def add():
     todo = Todo(text=request.form['todoitem'], complete=False)
     db.session.add(todo)
     db.session.commit()
     return redirect(url_for('index'))
+
 
 @app.route('/complete/<id>')
 def complete(id):
@@ -37,6 +40,7 @@ def complete(id):
 
     return redirect(url_for('index'))
 
+
 @app.route('/undo/<id>')
 def undo(id):
 
@@ -46,6 +50,7 @@ def undo(id):
 
     return redirect(url_for('index'))
 
+
 @app.route('/clear')
 def clear():
     clean = Todo.query.filter_by(complete=True).all()
@@ -53,6 +58,7 @@ def clear():
         db.session.delete(n)
     db.session.commit()
     return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)
