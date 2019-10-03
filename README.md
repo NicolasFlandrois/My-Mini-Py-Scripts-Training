@@ -185,6 +185,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished, But can be optimised
 
++ **hanoi.py**:
+
+    Recursion practice exercise in Python, using [Tower of Hanoï](https://en.wikipedia.org/wiki/Tower_of_Hanoi) mathematical game.
+
+    *status*: Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
