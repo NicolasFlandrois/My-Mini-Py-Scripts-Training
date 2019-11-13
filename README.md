@@ -197,6 +197,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **baseconverter.py**:
+
+    Function converting any decimal number into any N-base numerals (max base-36).
+
+    *status*: Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
