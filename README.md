@@ -191,6 +191,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **fun.py**:
+
+    Short script, for practice and fun. Will be displayed in a while loop a 'Hello World' count every half seconds. The counting display however will be randomly between different digit bases (Binary, base-3, Decimal, Hexadecimal, base-64, base-32, base-36). This is more a practice in numbers base-n conversion, using different tools.
+
+    *status*: Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
