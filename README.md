@@ -216,6 +216,11 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **trees.py**:
+
+    2D tree vsisual of math/algebra expression, using classes & recursions.
+
+    *status*: In Process
 -----------------------------
 ## EXERCICES/PRACTICES:
 
