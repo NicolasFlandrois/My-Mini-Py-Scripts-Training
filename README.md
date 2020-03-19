@@ -221,6 +221,13 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
     2D tree vsisual of math/algebra expression, using classes & recursions.
 
     *status*: In Process
+
++ **simplePygame.py**:
+
+    EXERCICE: Display a solid blue circle in the center of a window.
+    Reminder of different basic functionalities in Pygame.
+
+    *status*: Finished
 -----------------------------
 ## EXERCICES/PRACTICES:
 
