@@ -203,6 +203,19 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **sudoku.py**:
+
+    Create a sudoku solver in python, using recursion.
+
+    *status*: Finished
+
++ **nono.py**:
+
+    EXERCICE: Your robot 'Nono' needs to go straigth in line, but needs to clear its path on the way. Its path is N pads (squares), on each pads sits an obstacle. Nono need to take the obstacle in from of him/it, and dispose of it, back to its storage unit (all the way back where it started)... and do so for each and every obstacles on its path.
+    GOAL: Print out what its path (back and forth) looks like.
+
+    *status*: Finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
