@@ -69,7 +69,7 @@ def solve():
                     if possible(y, x, n):
                         grid[y][x] = n
                         solve()
-                        grid[y][x] = 0
+                        grid[y][x] = 0 # Backtracking
                 return
     print('\nA possible Solution is:\n', np.matrix(grid))
     input("\nMore?")
