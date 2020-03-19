@@ -1,10 +1,10 @@
 #! usr/bin/python3
-# Start coding exercice: Thu 27 Dec 2018 10:39:02 AM CET 
+# Start coding exercice: Thu 27 Dec 2018 10:39:02 AM CET
 # End date v1:
 # Author: Nicolas Flandrois
 
-# Description: 
-# We consider a drink dispenser, prices are integer, and the machine keeps change only in coins of 2€, 5€, 10€, in a finit amount. 
+# Description:
+# We consider a drink dispenser, prices are integer, and the machine keeps change only in coins of 2€, 5€, 10€, in a finit amount.
 # When the user (player) chooses a drink, the machine asks the player to pay the drink's price. The player can input any amount of money, >0€ & int() & >drink_price_€.
 # Then the machine will determine the change to return to the player, within its account of finit amount of coins of 2€, 5€, and 10€.
 # It will first give change for biggest coin value, within available balance account for this coin value.
@@ -19,7 +19,7 @@
 #   - The detail of merchandise/drinks sold = individual count of each drinks sold
 #   - The change coins balance, in details per coins value (Coin value, number of remaining coins, total € value for this coin value), and a global value amount (in €) of change coins
 #   - The total Money in the machine (Total Sales + Global value amount€ of change coins)
-# 
+#
 # Optional features:
 #   - At begining of launching script, ask what drinks and prices has to be set. Inclued them in a dictionary.
 #   - At begining of launching script, ask how many coins are in the machine, for each coin value... the initial "fond de caisse".
@@ -33,3 +33,31 @@
 #                    - Which coin value raised the alert?
 #                    - Gives a summary of Balance account
 #    - Make a balance account for number of drinks, which at every sale, it substract 1. If = 0 then print message "Out of this drink. Victim of its success."
+
+def change(cash):
+    # Your code goes here
+    try:
+        if cash < 2:
+            return None
+        else:
+            ten = cash // 10
+            cash = cash % 10
+            five = cash // 5
+            cash = cash % 5
+            two = cash // 2
+            res = cash % 2
+        return {
+            'two': two,
+            'five': five,
+            'ten': ten
+        }
+    except:
+        return None
+
+
+print(change(1))  # None
+
+res = change(42)
+print(res['two'])  # 1
+print(res['five'])  # 0
+print(res['ten'])  # 4
