@@ -228,6 +228,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
     Reminder of different basic functionalities in Pygame.
 
     *status*: Finished
+
++ **twitter_loop.py**:
+
+    Twitter bot, simple, using API & Tweepy package, within a while loop.
+
+    *status*: Finished
 -----------------------------
 ## EXERCICES/PRACTICES:
 
