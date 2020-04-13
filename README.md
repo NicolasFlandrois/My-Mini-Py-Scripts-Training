@@ -234,6 +234,14 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
     Twitter bot, simple, using API & Tweepy package, within a while loop.
 
     *status*: Finished
+
++ **mail_sender.py**:
+
+    Email sender bot, in Python.
+
+    *status*: In Process
+    *To do*: Figure out the attach file > Auto detect file type and use appropriate protocol (pdf, images, doc/xlxs, etc)
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
