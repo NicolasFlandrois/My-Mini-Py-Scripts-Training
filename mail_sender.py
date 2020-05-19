@@ -1,5 +1,11 @@
-#!/usr/bin/python3
-# -*- encoding: utf-8 -*-
+# coding: utf8
+#! /usr/bin/python3
+
+# Tue 19 May 2020 10:29:01 CEST
+# Author: Nicolas Flandrois
+
+# Description: Trainning and discovery on How to send email with Python,
+# using standard libraries
 
 
 import os
@@ -41,10 +47,11 @@ def send_email(from_addr, gmail_key,
         print('\nEmail failed to send.')
 
 
+##############################################################################
 from_addr = os.environ.get('EMAIL_USER')
 gmail_key = os.environ.get('EMAIL_PASS')
 
-to_addrs = ['test@test.com', 'me-myself-and-i@exemple.com']
+to_addrs = from_addr
 
 subject = f'Python Email Sender bot - TEST - \
 {datetime.now().strftime("%A, %d. %B %Y %I:%M%p")}'
@@ -62,10 +69,11 @@ body_html = """<!DOCTYPE html>
 </html>"""
 
 
+##############################################################################
 if __name__ == "__main__":
     # send_email(from_addr, gmail_key, to_addrs,
     #            subject, body_html=body_html)
-    send_email(from_addr, gmail_key, to_addrs,
+    send_email(from_addr, gmail_key, to_addrs[1],
                subject, msg, body_html)
     # send_email(from_addr, gmail_key, to_addrs,
     #            subject, msg)

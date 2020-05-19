@@ -229,9 +229,9 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
-+ **twitter_loop.py**:
++ **Twitter_Training.py**:
 
-    Twitter bot, simple, using API & Tweepy package, within a while loop.
+    Twitter bot, simple, using API & Tweepy package, within a while loop. Exploration and training on Twitter API.
 
     *status*: Finished
 
@@ -241,6 +241,18 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: In Process
     *To do*: Figure out the attach file > Auto detect file type and use appropriate protocol (pdf, images, doc/xlxs, etc)
+
++ **Twitterbot_Like**:
+
+    Bot using twitter API, given a list of "Friends' id" on Twitter, it will automatically 'like' their 20 latest tweets, and send an email to tell the user it's done a good job. This version is ready to be used in a CRONTAB schedule.
+
+    *status*: Finished
+
++ **Twitterbot_WhoFollowsWhom.py**:
+
+    Bot using Twitter API, this short script will output text files, listing who is following whom.
+
+    *status*: Finished
 
 -----------------------------
 ## EXERCICES/PRACTICES:

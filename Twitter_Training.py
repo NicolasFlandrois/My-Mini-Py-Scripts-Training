@@ -1,13 +1,26 @@
+# coding: utf8
+#!/usr/bin/python3
+
+# Tue 19 May 2020 10:29:01 CEST
+# Author: Nicolas Flandrois
+
+# Description: Training and discovery of Twitter API and Tweepy module
 # https://tweepy.readthedocs.io/en/latest/
+
+import os
 from datetime import datetime as dt
 import time
 import tweepy
 
-API_Key = 'Your Twitter API Key Here'
-API_Secret_Key = 'Your Twitter API Secret Key Here'
+# 'Your Twitter API Key Here'
+API_Key = os.environ.get('TWTR_API_KEY')
+# 'Your Twitter API Secret Key Here'
+API_Secret_Key = os.environ.get('TWTR_API_SECRET_KEY')
 
-AccessToken = 'Your Twitter AccessToken Here'
-AccessTokenSecret = 'Your Twitter AccessTokenSecret Here'
+# 'Your Twitter AccessToken Here'
+AccessToken = os.environ.get('TWTR_ACCESS_TOKEN')
+# 'Your Twitter AccessTokenSecret Here'
+AccessTokenSecret = os.environ.get('TWTR_ACCESS_TOKEN_SECRET')
 
 auth = tweepy.OAuthHandler(API_Key, API_Secret_Key)
 auth.set_access_token(AccessToken, AccessTokenSecret)
