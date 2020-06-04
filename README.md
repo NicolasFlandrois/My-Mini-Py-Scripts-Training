@@ -1,3 +1,13 @@
+<!--
+*** Markdown
+*** coding: utf-8
+*** Author: Nicolas Flandrois
+*** Date:   Thu 04 June 2020 23:33:48
+*** Last Modified time: Thu 04 June 2020 23:36:49 
+ -->
+
+<!-- Project Description: Index of all different 'tiny' projects in this GitHUb repo -->
+
 # My-Mini-Py-Scripts
 Mini python Scripts
 
@@ -251,6 +261,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 + **Twitterbot_WhoFollowsWhom.py**:
 
     Bot using Twitter API, this short script will output text files, listing who is following whom.
+
+    *status*: Finished
+
++ **moon.py**:
+
+    Short project to determine the moon phase from a date. Using Astral libraby, which returns a float, comparing the float range to moon phases, and then identifying the corresponding name, in a choosen language.
 
     *status*: Finished
 
