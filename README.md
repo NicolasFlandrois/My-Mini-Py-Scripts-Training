@@ -3,7 +3,7 @@
 *** coding: utf-8
 *** Author: Nicolas Flandrois
 *** Date:   Thu 04 June 2020 23:33:48
-*** Last Modified time: Thu 04 June 2020 23:36:49 
+*** Last Modified time: Thu 16 July 2020 14:57:05 
  -->
 
 <!-- Project Description: Index of all different 'tiny' projects in this GitHUb repo -->
@@ -267,6 +267,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 + **moon.py**:
 
     Short project to determine the moon phase from a date. Using Astral libraby, which returns a float, comparing the float range to moon phases, and then identifying the corresponding name, in a choosen language.
+
+    *status*: Finished
+
++ **Mathemagic_Denmark-Elephant.jpnb**:
+
+    Jupyter Notebook short exercice to create a script from a well known Mathemagic Denmark-Elephant.
 
     *status*: Finished
 
