@@ -3,7 +3,7 @@
 *** coding: utf-8
 *** Author: Nicolas Flandrois
 *** Date:   Thu 04 June 2020 23:33:48
-*** Last Modified time: Thu 16 July 2020 14:57:05 
+*** Last Modified time: Fri 31 July 2020 17:09:26 
  -->
 
 <!-- Project Description: Index of all different 'tiny' projects in this GitHUb repo -->
@@ -273,6 +273,18 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 + **Mathemagic_Denmark-Elephant.jpnb**:
 
     Jupyter Notebook short exercice to create a script from a well known Mathemagic Denmark-Elephant.
+
+    *status*: Finished
+
++ **Impossible Chessboard Puzzle**:
+
+    Math Puzzle, using binary correction algorythm.
+
+    *status*: Finished
+
++ **Roman.py**:
+
+    How to convert an integer into a Roman Numeral String, and translate it back in int?
 
     *status*: Finished
 
