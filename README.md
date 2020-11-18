@@ -3,7 +3,7 @@
 *** coding: utf-8
 *** Author: Nicolas Flandrois
 *** Date:   Thu 04 June 2020 23:33:48
-*** Last Modified time: Fri 31 July 2020 17:09:26 
+*** Last Modified time: Fri 31 July 2020 17:09:26
  -->
 
 <!-- Project Description: Index of all different 'tiny' projects in this GitHUb repo -->
@@ -288,6 +288,18 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
++ **covidAPI.py**:
+
+    Exploring data & stats from a covid 19 API.
+
+    *status*: exploring | finished
+
++ **Python & Steganography.ipynb**:
+
+    Exploring different methods and packages' libraries to steganography w/ Python.
+
+    *status*: exploring
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
@@ -343,5 +355,7 @@ Those projects moved to their own repositories:
         + Gender (M/F depending on first name randomly assigned)
         + Birth date (Random)
         + Socialsecurity number (According to gender + Year of birth + Month of birth + Randomly assigned department number in range or within a list + 8 random numbers) cf: [wiki page](https://fr.wikipedia.org/wiki/Num%C3%A9ro_de_s%C3%A9curit%C3%A9_sociale_en_France#ancrage_C)
+
+    - This project has now an  [independant GitHub Repository](https://github.com/NicolasFlandrois/Populating-Database-Generator), and is no longer followed in this My-Mini-Python-Script Repo.
 
     *status*: **[Ice box - Waiting to work on it]**
