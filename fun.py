@@ -13,18 +13,19 @@ def baseN(num, base, numerals="0123456789abcdefghijklmnopqrstuvwxyz"):
 counter = count(start=1)
 
 while True:
-    n_round = next(counter)
-    rand_choice = choice([
-                         bin(n_round)[2:],
-                         hex(n_round)[2:],
-                         n_round,
-                         str(b64encode(str(n_round).encode())).replace(
-                             '=', '')[2:-1],
-                         baseN(n_round, 36),
-                         baseN(n_round, 3),
-                         baseN(n_round, 32),
-                         baseN(n_round, 20)
-                         ])
+    # n_round = next(counter)
+    # rand_choice = choice([
+    #                      bin(n_round)[2:],
+    #                      hex(n_round)[2:],
+    #                      n_round,
+    #                      str(b64encode(str(n_round).encode())).replace(
+    #                          '=', '')[2:-1],
+    #                      baseN(n_round, 36),
+    #                      baseN(n_round, 3),
+    #                      baseN(n_round, 32),
+    #                      baseN(n_round, 20)
+    #                      ])
+    print(baseN(random.randrange(1, 101), random.randrange(1, 37)))
 
-    print(f'Hello World ! {n_round} = {rand_choice}')
+    # print(f'Hello World ! {n_round} = {rand_choice}')
     sleep(0.5)
