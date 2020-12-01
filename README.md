@@ -165,9 +165,14 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
     Leave the list to display, so participants can know to whom they will offer a secret santa gift this year.
     Random, Fair, Efficient!
 
-    ***Possible Evolution***:
+    ~~***Possible Evolution***:~~
 
-    - Automate and randomize even further, by giving it a list of name. Reuse the random pairing algorythm. Send an email/sms to each secret santa, directly the name to whom they'll offer a secret santa gift. (Leaving No ways to reprint of reverse engineer it.)
+    ~~- Automate and randomize even further, by giving it a list of name. Reuse the random pairing algorythm. Send an email/sms to each secret santa, directly the name to whom they'll offer a secret santa gift. (Leaving No ways to reprint of reverse engineer it.)~~
+    [cf. script file secretSantaEmail.py]
+
+    *version*: v1
+
+    *License*: MIT License - Copyright (c) 2019 Nicolas Flandrois
 
     *status*: Finished
 
@@ -299,6 +304,24 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
     Exploring different methods and packages' libraries to steganography w/ Python.
 
     *status*: exploring
+
++ **secretSantaEmail.py**:
+
+    Based on previous `secretsanta.py` mini-project. Random automation Secret Santas assignements, and sending results individually by emails.
+
+    *To Do (for next versions)*:
+    - Create his own project REPO
+    - Automate to Non Gmail Users
+    - HTML Secret Santa text/body, to work on... add a Xmas-ish feel to it.
+    - Import names/emails of Participating Santas from external file source (Data Base, or data file e.g. csv, txt, json).
+    - Create a GUI, & combining both secret santa projects. Get a menu, either paper+hat (Suitable for office co-working annimation) or via email (totally automated).
+
+    *version*: v2
+
+    *License*: MIT License - Copyright (c) 2020 Nicolas Flandrois
+
+    *status*: finished
+
 
 -----------------------------
 ## EXERCICES/PRACTICES:
