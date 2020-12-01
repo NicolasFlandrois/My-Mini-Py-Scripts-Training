@@ -2,16 +2,15 @@
 #! /usr/bin/python3
 # Date: Tue 01 December 2020 12:36:18 CET
 # Author: Nicolas Flandrois
-# License: MIT License
+# License: MIT License - Copyright (c) 2019 Nicolas Flandrois
 # Version: v2
 
 # Description: Sending `Secret Santa` assignement, automatically by email.
+# cf secretsanta.py project for random assignment algorythm.
 
 import os
 import smtplib
-# import imghdr
 from email.message import EmailMessage
-# from datetime import datetime
 import random
 
 

@@ -26,7 +26,7 @@
     # TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# DESCRIPTION: cf 'The indisputable existance of Santa Claus' by Dr Hannah Fry,
+# DESCRIPTION: cf 'The indisputable existence of Santa Claus' by Dr Hannah Fry,
 # Chapter 4 'Secret Santa' (p.46 to 54; ISBN 9781784162740).
 # This exercice tends to define a Random Hat Picking assignment of
 # a Secret Santa, to another participant.
