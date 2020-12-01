@@ -2,7 +2,7 @@
 #! /usr/bin/python3
 # Date: Tue 01 December 2020 12:36:18 CET
 # Author: Nicolas Flandrois
-# License: MIT License - Copyright (c) 2019 Nicolas Flandrois
+# License: MIT License - Copyright (c) 2020 Nicolas Flandrois
 # Version: v2
 
 # Description: Sending `Secret Santa` assignement, automatically by email.
