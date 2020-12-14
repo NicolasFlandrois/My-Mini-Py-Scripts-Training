@@ -284,6 +284,19 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: exploring
 
++ **Rock - Paper - Scissors : rps.py**:
+
+    Simple game logic handling "Rock Paper Scissors", in CLI. Handling a Human player vs a Computer (random choice).
+    Best out of 3 plays, wins the round. Each round keeps a score.
+    Simple logic practice given to my students, as an exercice.
+
+    *status*: finished
+
++ **chmod converter : chmod_calc.py**:
+
+    Simple script translating/converting `chmod` permissions into numerical CLI command.
+
+    *status*: finished
 
 -----------------------------
 ## EXERCICES/PRACTICES:
