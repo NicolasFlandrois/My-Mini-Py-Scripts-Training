@@ -1,9 +1,10 @@
-#! /usr/bin/python3
-# utf8
-# author: Nicolas Flandrois
-# created: December 11th, 2020
-# last modified by: Nicolas Flandrois
-# last modified on: December 12th, 2020.
+#!/usr/bin/python3
+#  -*- coding: utf-8 -*-
+
+# Date: Sat 12 December 2020 21:36:52 CET
+# Author: Nicolas Flandrois
+# Last updated by: Nicolas Flandrois
+# Last updated date:Mon 14 December 2020 13:12:01 CET
 
 # Description:
 # Game development, game logic structure: SHIFUMI / Rock Paper Scissors.
