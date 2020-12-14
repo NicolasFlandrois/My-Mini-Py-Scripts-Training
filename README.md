@@ -155,27 +155,6 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: Finished
 
-+ **secretsanta.py**:
-
-    A mathematically proven way to randomly assign Secret Santa's to participants. Based on the Book of Dr Hannah Fry 'The indisputable existence of Santa Claus'.
-    Give it the number of participants, it will give you a ready to print and cut document for Picking a pairing ticket (1 secret Santa & 1 gift receiving participant... Randomly assigned), in a [Santa's] Hat.
-    Cut the Pairing Tickets, place them in a Hat.
-    Each participants pick a ticket, with a Secret Santa ID number which they are, and to whom the'll secret santa gift offering this year.
-    Display the Empty List. Each participant place their name in from of his Secret Santa ID.
-    Leave the list to display, so participants can know to whom they will offer a secret santa gift this year.
-    Random, Fair, Efficient!
-
-    ~~***Possible Evolution***:~~
-
-    ~~- Automate and randomize even further, by giving it a list of name. Reuse the random pairing algorythm. Send an email/sms to each secret santa, directly the name to whom they'll offer a secret santa gift. (Leaving No ways to reprint of reverse engineer it.)~~
-    [cf. script file secretSantaEmail.py]
-
-    *version*: v1
-
-    *License*: MIT License - Copyright (c) 2019 Nicolas Flandrois
-
-    *status*: Finished
-
 + **minineuralnetwork.py**:
 
     Short exercices, build a neural network of 1 neurone, to predict Pi.
@@ -305,23 +284,6 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: exploring
 
-+ **secretSantaEmail.py**:
-
-    Based on previous `secretsanta.py` mini-project. Random automation Secret Santas assignements, and sending results individually by emails.
-
-    *To Do (for next versions)*:
-    - Create his own project REPO
-    - Automate to Non Gmail Users
-    - HTML Secret Santa text/body, to work on... add a Xmas-ish feel to it.
-    - Import names/emails of Participating Santas from external file source (Data Base, or data file e.g. csv, txt, json).
-    - Create a GUI, & combining both secret santa projects. Get a menu, either paper+hat (Suitable for office co-working annimation) or via email (totally automated).
-
-    *version*: v2
-
-    *License*: MIT License - Copyright (c) 2020 Nicolas Flandrois
-
-    *status*: finished
-
 
 -----------------------------
 ## EXERCICES/PRACTICES:
@@ -382,3 +344,48 @@ Those projects moved to their own repositories:
     - This project has now an  [independant GitHub Repository](https://github.com/NicolasFlandrois/Populating-Database-Generator), and is no longer followed in this My-Mini-Python-Script Repo.
 
     *status*: **[Ice box - Waiting to work on it]**
+
+- [Secret Santa](https://github.com/NicolasFlandrois/secret-santa) - MIT License - Copyright (c) 2020 Nicolas Flandrois
+
+    This project has now an  [independant GitHub Repository](https://github.com/NicolasFlandrois/secret-santa), and is no longer followed in this My-Mini-Python-Script Repo.
+
+    Regrouping the following scripts:
+
+    + **secretsanta.py**:
+
+        A mathematically proven way to randomly assign Secret Santa's to participants. Based on the Book of Dr Hannah Fry 'The indisputable existence of Santa Claus'.
+        Give it the number of participants, it will give you a ready to print and cut document for Picking a pairing ticket (1 secret Santa & 1 gift receiving participant... Randomly assigned), in a [Santa's] Hat.
+        Cut the Pairing Tickets, place them in a Hat.
+        Each participants pick a ticket, with a Secret Santa ID number which they are, and to whom the'll secret santa gift offering this year.
+        Display the Empty List. Each participant place their name in from of his Secret Santa ID.
+        Leave the list to display, so participants can know to whom they will offer a secret santa gift this year.
+        Random, Fair, Efficient!
+
+        ~~***Possible Evolution***:~~
+
+        ~~- Automate and randomize even further, by giving it a list of name. Reuse the random pairing algorythm. Send an email/sms to each secret santa, directly the name to whom they'll offer a secret santa gift. (Leaving No ways to reprint of reverse engineer it.)~~
+        [cf. script file secretSantaEmail.py]
+
+        *version*: v1
+
+        *License*: MIT License - Copyright (c) 2019 Nicolas Flandrois
+
+        *status*: Finished
+
+    + **secretSantaEmail.py**:
+
+        Based on previous `secretsanta.py` mini-project. Random automation Secret Santas assignements, and sending results individually by emails.
+
+        *To Do (for next versions)*:
+        - Create his own project REPO
+        - Automate to Non Gmail Users
+        - HTML Secret Santa text/body, to work on... add a Xmas-ish feel to it.
+        - Import names/emails of Participating Santas from external file source (Data Base, or data file e.g. csv, txt, json).
+        - Create a GUI, & combining both secret santa projects. Get a menu, either paper+hat (Suitable for office co-working annimation) or via email (totally automated).
+
+        *version*: v2
+
+        *License*: MIT License - Copyright (c) 2020 Nicolas Flandrois
+
+        *status*: finished
+
