@@ -298,6 +298,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: finished
 
++ **CPU Temp Datalog.ipynb**:
+
+    Exploring `psutil` packages' libraries to capture computer CPU temperature w/ Python, and potentially create a little dataloger.
+
+    *status*: exploring
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
