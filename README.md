@@ -54,7 +54,7 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     Creating the script for a dispenser machine, asking for money according to price, and giving back change, taking into account a few perks.
 
-    *status*: **[Work in progress]**
+    *status*: **v2.0**
 
 + **fibonacci.py**:
 
