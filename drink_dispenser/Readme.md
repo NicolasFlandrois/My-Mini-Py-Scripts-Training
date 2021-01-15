@@ -1,11 +1,12 @@
 
  Start coding exercice: Thu 27 Dec 2018 10:39:02 AM CET 
- End date v1:
+ 
  Author: Nicolas Flandrois
 
  Description: 
  We consider a drink dispenser, prices are integer, and the machine keeps change only in coins of 2€, 5€, 10€, in a finit amount. 
- When the user (player) chooses a drink, the machine asks the player to pay the drink's price. The player can input any amount of money, >0€ & int() & >drink_price_€.
+ When the user (player) chooses a drink, the machine asks the player to pay the drink's price. 
+ The player can input any amount of money, >0€ & int() & >drink_price_€.
  Then the machine will determine the change to return to the player, within its account of finit amount of coins of 2€, 5€, and 10€.
  It will first give change for biggest coin value, within available balance account for this coin value.
  If it cannot, then it will give change for Second biggest value, within available balance account for this coin value.
