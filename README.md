@@ -304,6 +304,24 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: exploring
 
++ **LetterFrequencyFromTxtToBarChart.ipynb**:
+
+    Challenge what are the different ways to get the letter frequency out of a text? (Jupyter Notebook format)
+
+    *status*: finished
+
++ **PrintTo100WithoutLoops.ipynb**:
+
+    Challenge : How would you print the numbers from 1 to a 100 (or more) without using any loops in your code? (Jupyter Notebook format)
+
+    *status*: finished
+
++ **PrintTo100WithoutNumbers.ipynb**:
+
+    Challenge : How would you print the numbers from 1 to a 100 (or more) without using any digits/numbers in your code? (Jupyter Notebook format)
+
+    *status*: finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
