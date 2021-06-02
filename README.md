@@ -322,6 +322,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: finished
 
++ **kivy_hello_world.py**:
+
+    Description : Introduction and discovery of Kivy framework. Simple "Hello Wolrd!" interface.
+
+    *status*: finished
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
