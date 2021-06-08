@@ -328,6 +328,12 @@ In this repository I'll stack tiny scripts, command lines automation, small prog
 
     *status*: finished
 
++ **numba_prime.py**:
+
+    Description : How to boost computation with Numba? Here filtering if a number is a Prime Number.
+
+    *status*: finished (exploring)
+
 -----------------------------
 ## EXERCICES/PRACTICES:
 
